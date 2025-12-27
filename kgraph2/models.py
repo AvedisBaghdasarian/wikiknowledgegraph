@@ -2,6 +2,7 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Any, Iterator
 from enum import Enum
 import mwxml
+import re
 
 
 class NodeType(Enum):
@@ -29,6 +30,16 @@ class Chunk:
     type: NodeType
     hierarchy_owner: str
     metadata: Dict[str, Any] = field(default_factory=dict)
+
+    def get_links(self) -> List[str]:
+        """
+        Extracts Wikipedia links (double brackets) from the content.
+        Returns a unique list of linked page titles.
+        """
+        # Find all [[target]] or [[target|text]] patterns
+        matches = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]*)?\]\]', self.content)
+        # Use a set to ensure uniqueness, then back to a list
+        return list(set(matches))
 
 @dataclass
 class Page:

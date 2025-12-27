@@ -1,7 +1,7 @@
 import pytest
 import os
 import tempfile
-from kgraph2.models import XMLMultiPageDoc, Page
+from kgraph2.models import XMLMultiPageDoc, Chunk, NodeType
 
 XML_CONTENT = """<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
   <siteinfo>
@@ -79,6 +79,19 @@ XML_CONTENT = """<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xm
 </mediawiki>
 """
 
+def test_chunk_get_links():
+    content = "This is a [[link]] to [[Something|Else]] and another [[link]]."
+    chunk = Chunk(
+        content=content,
+        index=0,
+        type=NodeType.PARAGRAPH,
+        hierarchy_owner="Test Page"
+    )
+    links = chunk.get_links()
+    assert len(links) == 2
+    assert "link" in links
+    assert "Something" in links
+
 def test_xml_multi_page_doc():
     with tempfile.NamedTemporaryFile(mode='w', suffix='.xml', delete=False) as f:
         f.write(XML_CONTENT)
@@ -99,8 +112,6 @@ def test_xml_multi_page_doc():
         assert pages[1].title == "State of Change"
         assert str(pages[1].metadata['page_id']) == "5399373"
         assert "State of Change" in pages[1].raw_content
-        # The content in the XML above seems truncated or mwxml is behaving unexpectedly with literal strings
-        # but let's check what it actually has.
         assert "[[Christopher Bulis]]" in pages[1].raw_content
 
     finally:
