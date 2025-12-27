@@ -1,0 +1,5296 @@
+{
+  "label": "paragraphs",
+  "start": 0,
+  "end": 661,
+  "cypher": "\n        UNWIND $batch AS row\n                MERGE (p:Paragraph {id: row.id})\n                SET\n                    p.text = row.text,\n                    p.title = row.title,\n                    p.line = row.line,\n                    p.chunk_idx = row.chunk_idx,\n                    p.parent_heading = row.parent_heading\n        ",
+  "batch": [
+    {
+      "id": "Monica_Abbott:0:0",
+      "text": "{{Short description|American softball player (born 1985)}}",
+      "title": "Monica_Abbott",
+      "line": 0,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:1:0",
+      "text": "{{Use mdy dates|date=January 2019}}",
+      "title": "Monica_Abbott",
+      "line": 1,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:2:0",
+      "text": "{{Infobox baseball biography",
+      "title": "Monica_Abbott",
+      "line": 2,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:3:0",
+      "text": "| image         = Monica Abbott.jpg",
+      "title": "Monica_Abbott",
+      "line": 3,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:4:0",
+      "text": "| team          = Team USA",
+      "title": "Monica_Abbott",
+      "line": 4,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:5:0",
+      "text": "| number        = 14",
+      "title": "Monica_Abbott",
+      "line": 5,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:6:0",
+      "text": "| position      = [[Pitcher]]",
+      "title": "Monica_Abbott",
+      "line": 6,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:7:0",
+      "text": "| birth_date    = {{birth date and age|1985|07|28|mf=yes}}",
+      "title": "Monica_Abbott",
+      "line": 7,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:8:0",
+      "text": "| birth_place   = [[Santa Cruz, California]], U.S.",
+      "title": "Monica_Abbott",
+      "line": 8,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:9:0",
+      "text": "| death_date    =",
+      "title": "Monica_Abbott",
+      "line": 9,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:10:0",
+      "text": "| death_place   =",
+      "title": "Monica_Abbott",
+      "line": 10,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:11:0",
+      "text": "| bats          = Left",
+      "title": "Monica_Abbott",
+      "line": 11,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:12:0",
+      "text": "| throws        = Left",
+      "title": "Monica_Abbott",
+      "line": 12,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:13:0",
+      "text": "| debutleague   = NPF",
+      "title": "Monica_Abbott",
+      "line": 13,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:14:0",
+      "text": "| debutdate     =",
+      "title": "Monica_Abbott",
+      "line": 14,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:15:0",
+      "text": "| debutyear     = 2007",
+      "title": "Monica_Abbott",
+      "line": 15,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:16:0",
+      "text": "| debutteam     = [[Tennessee Diamonds]]",
+      "title": "Monica_Abbott",
+      "line": 16,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:17:0",
+      "text": "| finalleague   =",
+      "title": "Monica_Abbott",
+      "line": 17,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:18:0",
+      "text": "| finaldate     =",
+      "title": "Monica_Abbott",
+      "line": 18,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:19:0",
+      "text": "| finalyear     =",
+      "title": "Monica_Abbott",
+      "line": 19,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:20:0",
+      "text": "| finalteam     =",
+      "title": "Monica_Abbott",
+      "line": 20,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:21:0",
+      "text": "| statleague    =",
+      "title": "Monica_Abbott",
+      "line": 21,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:22:0",
+      "text": "| statyear      =",
+      "title": "Monica_Abbott",
+      "line": 22,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:23:0",
+      "text": "| stat1label =",
+      "title": "Monica_Abbott",
+      "line": 23,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:24:0",
+      "text": "| stat1value =",
+      "title": "Monica_Abbott",
+      "line": 24,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:25:0",
+      "text": "| stat2label =",
+      "title": "Monica_Abbott",
+      "line": 25,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:26:0",
+      "text": "| stat2value =",
+      "title": "Monica_Abbott",
+      "line": 26,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:27:0",
+      "text": "| stat3label =",
+      "title": "Monica_Abbott",
+      "line": 27,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:28:0",
+      "text": "| stat3value =",
+      "title": "Monica_Abbott",
+      "line": 28,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:29:0",
+      "text": "| stat4label =",
+      "title": "Monica_Abbott",
+      "line": 29,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:30:0",
+      "text": "| stat4value =",
+      "title": "Monica_Abbott",
+      "line": 30,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:31:0",
+      "text": "| highlights =",
+      "title": "Monica_Abbott",
+      "line": 31,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:32:0",
+      "text": "* 2x Olympic Silver Medalist",
+      "title": "Monica_Abbott",
+      "line": 32,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:33:0",
+      "text": "* 3× World Champion",
+      "title": "Monica_Abbott",
+      "line": 33,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:34:0",
+      "text": "* 5× NPF Champion",
+      "title": "Monica_Abbott",
+      "line": 34,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:35:0",
+      "text": "* 6× JSL Champion",
+      "title": "Monica_Abbott",
+      "line": 35,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:36:0",
+      "text": "* [[Honda Sports Award]] ([[2007 NCAA Division I softball season|2007]])",
+      "title": "Monica_Abbott",
+      "line": 36,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:37:0",
+      "text": "* [[USA Softball Collegiate Player of the Year]] (2007)",
+      "title": "Monica_Abbott",
+      "line": 37,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:38:0",
+      "text": "* [[SEC Female Athlete of the Year]] (2007)",
+      "title": "Monica_Abbott",
+      "line": 38,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:39:0",
+      "text": "* NCAA Record holder in Strikes",
+      "title": "Monica_Abbott",
+      "line": 39,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:40:0",
+      "text": "* NCAA Record holder in Wins",
+      "title": "Monica_Abbott",
+      "line": 40,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:41:0",
+      "text": "| teams =",
+      "title": "Monica_Abbott",
+      "line": 41,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:42:0",
+      "text": "* [[Tennessee Lady Volunteers softball|Tennessee]] (2004–2007)",
+      "title": "Monica_Abbott",
+      "line": 42,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:43:0",
+      "text": "* [[National Pro Fastpitch|NPF]] (2007–2017)",
+      "title": "Monica_Abbott",
+      "line": 43,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:44:0",
+      "text": "* [[Toyota Red Terriers]] (2009–2022)",
+      "title": "Monica_Abbott",
+      "line": 44,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:45:0",
+      "text": "* [[United States women's national softball team|Team USA]] (2005–2010, 2018–2023)",
+      "title": "Monica_Abbott",
+      "line": 45,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:46:0",
+      "text": "}}",
+      "title": "Monica_Abbott",
+      "line": 46,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:47:0",
+      "text": "{{MedalTableTop | name = no | medals =",
+      "title": "Monica_Abbott",
+      "line": 47,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:48:0",
+      "text": "{{MedalSport | Women's [[softball]] }}",
+      "title": "Monica_Abbott",
+      "line": 48,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:49:0",
+      "text": "{{MedalCountry | {{USA}} }}",
+      "title": "Monica_Abbott",
+      "line": 49,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:50:0",
+      "text": "{{MedalCompetition | [[Olympic Games]] }}",
+      "title": "Monica_Abbott",
+      "line": 50,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:51:0",
+      "text": "{{MedalSilver | [[2008 Summer Olympics|2008 Beijing]] | [[Softball at the 2008 Summer Olympics|Team]] }}",
+      "title": "Monica_Abbott",
+      "line": 51,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:52:0",
+      "text": "{{MedalSilver| [[2020 Summer Olympics|2020 Tokyo]] | [[Softball at the 2020 Summer Olympics|Team]] }}",
+      "title": "Monica_Abbott",
+      "line": 52,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:53:0",
+      "text": "{{MedalCompetition | [[ISF Women's World Championship]] }}",
+      "title": "Monica_Abbott",
+      "line": 53,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:54:0",
+      "text": "{{MedalGold | [[2006 ISF Women's World Championship|2006 Beijing]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 54,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:55:0",
+      "text": "{{MedalGold | [[2010 ISF Women's World Championship|2010 Caracas]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 55,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:56:0",
+      "text": "{{MedalGold | [[2018 Women's Softball World Championship|2018 Chiba City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 56,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:57:0",
+      "text": "{{MedalCompetition | [[World Cup of Softball]] }}",
+      "title": "Monica_Abbott",
+      "line": 57,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:58:0",
+      "text": "{{MedalSilver | [[2005 World Cup of Softball|2005 Oklahoma City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 58,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:59:0",
+      "text": "{{MedalGold | [[2006 World Cup of Softball|2006 Oklahoma City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 59,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:60:0",
+      "text": "{{MedalGold | [[2007 World Cup of Softball|2007 Oklahoma City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 60,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:61:0",
+      "text": "{{MedalGold | [[2009 World Cup of Softball|2009 Oklahoma City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 61,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:62:0",
+      "text": "{{MedalGold | [[2010 World Cup of Softball|2010 Oklahoma City]] | Team }}",
+      "title": "Monica_Abbott",
+      "line": 62,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:63:0",
+      "text": "{{MedalGold | 2018 Irvine | Team }}",
+      "title": "Monica_Abbott",
+      "line": 63,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:64:0",
+      "text": "{{MedalGold | 2019 Columbus | Team }}",
+      "title": "Monica_Abbott",
+      "line": 64,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:65:0",
+      "text": "{{MedalCompetition | [[Pan American Games]] }}",
+      "title": "Monica_Abbott",
+      "line": 65,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:66:0",
+      "text": "{{MedalGold | [[2007 Pan American Games|2007 Rio de Janeiro]] | [[Softball at the 2007 Pan American Games|Team]]}}",
+      "title": "Monica_Abbott",
+      "line": 66,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:67:0",
+      "text": "{{MedalGold | [[2019 Pan American Games|2019 Lima]] | [[Softball at the 2019 Pan American Games|Team]] }}",
+      "title": "Monica_Abbott",
+      "line": 67,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:68:0",
+      "text": "{{MedalCompetition | [[World Games]] }}",
+      "title": "Monica_Abbott",
+      "line": 68,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:69:0",
+      "text": "{{MedalGold | [[2022 World Games|2022 Birmingham]] | [[Softball at the 2022 World Games|Team]] }}",
+      "title": "Monica_Abbott",
+      "line": 69,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:70:0",
+      "text": "}}",
+      "title": "Monica_Abbott",
+      "line": 70,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:72:0",
+      "text": "'''Monica Cecilia Abbott''' (born July 28, 1985) is a retired American professional softball player. Abbott was an All-American pitcher for the [[Tennessee Lady Volunteers softball|Tennessee Lady Volunteers]] in college before starting a professional career in the [[National Pro Fastpitch|NPF]] and in the Japan Softball League. In international competition, she has played for Team USA from 2005 including the national softball team winning a silver medal at the [[2008 Summer Olympics|2008]] and [[2020 Summer Olympics]]. Abbott is the NCAA Division I leader in wins, strikeouts, shutouts and innings.",
+      "title": "Monica_Abbott",
+      "line": 72,
+      "chunk_idx": 0,
+      "parent_heading": "Monica_Abbott"
+    },
+    {
+      "id": "Monica_Abbott:75:0",
+      "text": "Abbott was born in [[Santa Cruz, California]] and grew up in [[Salinas, California]]. Abbott attended [[North Salinas High School]] from 1999 to 2003; her parents are Bruce and Julie Abbott, and her siblings are Jessica (born 1984), Jared (born 1988) and twins Bina and Gina (born 1991).<ref name=\"utsports\">{{cite web |url=https://utsports.com/sports/softball/roster/monica-abbott/3864 |title=Monica Abbott |location=Utsports.com |access-date=2020-08-27 |archive-date=June 29, 2020 |archive-url=https://web.archive.org/web/20200629014923/https://utsports.com/sports/softball/roster/monica-abbott/3864 |url-status=dead }}</ref>",
+      "title": "Monica_Abbott",
+      "line": 75,
+      "chunk_idx": 0,
+      "parent_heading": "Early life and education"
+    },
+    {
+      "id": "Monica_Abbott:77:0",
+      "text": "While at North Salinas, Abbott led the Vikings to three CIF Central Coast Section Division I titles, averaging more than 300 strikeouts per season.<ref name=\"californian\">{{cite web |url=https://www.thecalifornian.com/story/sports/2017/03/09/monica-abbott-setting-standard/98980664/|title=Monica Abbott: Setting The Standard |location=The Californian|access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 77,
+      "chunk_idx": 0,
+      "parent_heading": "Early life and education"
+    },
+    {
+      "id": "Monica_Abbott:79:0",
+      "text": "Abbott won the Cal-Hi Softball Athlete of the Year, the Sports Focus Athlete of the Year, the state's large school Player of the Year, and the MVP trophies from her high school, conference, county and section. She was also a two-time recipient of The Salinas Californian Athlete of the Year.<ref name=\"utsports\" />",
+      "title": "Monica_Abbott",
+      "line": 79,
+      "chunk_idx": 0,
+      "parent_heading": "Early life and education"
+    },
+    {
+      "id": "Monica_Abbott:82:0",
+      "text": "Much sought after by many colleges, Abbott decided to go to the University of Tennessee, with their treatment of female athletes an influencing factor.<ref name=\"californian\" />",
+      "title": "Monica_Abbott",
+      "line": 82,
+      "chunk_idx": 0,
+      "parent_heading": "University of Tennessee"
+    },
+    {
+      "id": "Monica_Abbott:83:0",
+      "text": "Abbott pitched for the [[University of Tennessee]] Lady Volunteers softball team from 2004 to 2007 and majored in communications.<ref name=\"utsports\" />",
+      "title": "Monica_Abbott",
+      "line": 83,
+      "chunk_idx": 0,
+      "parent_heading": "University of Tennessee"
+    },
+    {
+      "id": "Monica_Abbott:86:0",
+      "text": "Abbott became Tennessee's first All-American when selected as a Louisville Slugger/NFCA First Team All-American. In 59 appearances, Abbott was 45–10, compiled a 1.03 earned run average with 44 complete games and 24 solo shutouts, four no-hitters and a perfect game. She struck out 582 batters in 352 innings. Following the season she was named [[Southeastern Conference Softball Freshman of the Year|SEC Freshman of the Year]]. Abbott became the third pitcher in NCAA history to notch 500 strikeouts in a season.<ref name=\"utsports\" />",
+      "title": "Monica_Abbott",
+      "line": 86,
+      "chunk_idx": 0,
+      "parent_heading": "Freshman"
+    },
+    {
+      "id": "Monica_Abbott:89:0",
+      "text": "Abbott  became a two-time first-team Louisville Slugger/NFCA All-American and All-South Region selection after going 50–9 with a 0.52 ERA in 392.0 IP.",
+      "title": "Monica_Abbott",
+      "line": 89,
+      "chunk_idx": 0,
+      "parent_heading": "Sophomore"
+    },
+    {
+      "id": "Monica_Abbott:90:0",
+      "text": "She broke her own record for single season wins with 50 and had 603 strikeouts thus becoming the first pitcher in NCAA Division I history to record 500 strikeouts in a season twice in her career. She helped lead UT to its first WCWS and was named to the WCWS All-Tourney team.<ref name=\"utsports\" />",
+      "title": "Monica_Abbott",
+      "line": 90,
+      "chunk_idx": 0,
+      "parent_heading": "Sophomore"
+    },
+    {
+      "id": "Monica_Abbott:93:0",
+      "text": "Once again, Abbott was chosen as a first-team Louisville Slugger/NFCA All-American as well as a first-team All-South Region choice.",
+      "title": "Monica_Abbott",
+      "line": 93,
+      "chunk_idx": 0,
+      "parent_heading": "Junior"
+    },
+    {
+      "id": "Monica_Abbott:94:0",
+      "text": "She led UT to the WCWS and was chosen as WCWS All-Tournament.",
+      "title": "Monica_Abbott",
+      "line": 94,
+      "chunk_idx": 0,
+      "parent_heading": "Junior"
+    },
+    {
+      "id": "Monica_Abbott:95:0",
+      "text": "Abbott's 531 strikeouts made an unprecedented third year in a row of over 500.<ref name=\"utsports\" />",
+      "title": "Monica_Abbott",
+      "line": 95,
+      "chunk_idx": 0,
+      "parent_heading": "Junior"
+    },
+    {
+      "id": "Monica_Abbott:98:0",
+      "text": "Abbott struck out  an NCAA Single Season current Record of 724 batters.<ref name=\"ncaarewatched\">{{cite web |url=https://wwwcache.ncaa.com/news/softball/article/2020-06-04/monica-abbott-rewatched-one-her-2007-wcws-games-and-her-reactions-are-golden?amp |title=Monica Abbott rewatched one of her 2007 WCWS games and her reactions are golden |location=NCAA |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 98,
+      "chunk_idx": 0,
+      "parent_heading": "Senior"
+    },
+    {
+      "id": "Monica_Abbott:99:0",
+      "text": "She had 23 no-hitters and six perfect games and was named the 2007 [[USA Softball Collegiate Player of the Year]] and the Women's Sports Foundation Sportswoman of the Year award for Team Sports athletes.<ref name=\"Sportswomen of the Year \">{{cite news |url=https://www.usatoday.com/sports/2007-10-15-3446696963_x.htm |title=Golfer Lorena Ochoa, softball star Monica Abbott win Sportswomen of the Year awards from WSF |last=Murphy |first=Melissa |date=October 15, 2007 |work=USATODAY.com |publisher=Gannett Co. Inc. |access-date=January 28, 2010}}</ref><ref name=\"ncaarewatched\" />  She also was the 2007 Honda Award Winner.<ref>{{cite web |url=https://nfca.org/divnews/general/abbott-wins-honda-award-for-softball-3278 |title=Abbott wins Honda Award for softball|date=June 12, 2007 |location=NFCA |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 99,
+      "chunk_idx": 0,
+      "parent_heading": "Senior"
+    },
+    {
+      "id": "Monica_Abbott:101:0",
+      "text": "She guided UT to its first SEC title and a berth in the CWS championship, where they lost to top-ranked Arizona in the best-of-three series final. Once again she was named to the all-tournament team.<ref name=\"Monica Abbott\">{{cite web |url=http://dailydsports.com/monica-abbott/ |title=Monica Abbott|date=July 28, 2017 |location=Daily Dose |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 101,
+      "chunk_idx": 0,
+      "parent_heading": "Senior"
+    },
+    {
+      "id": "Monica_Abbott:104:0",
+      "text": "Abbott set career and single season NCAA records her senior season with 189 victories, 2,440 strikeouts, 112 shutouts, 253 appearances and 1,448.0 innings pitched.<ref name=\"ncaarewatched\" /> She set a Single Season Record in Strikeouts of 724.<ref>{{cite web |url=https://utsports.com/news/2013/2/28/ut_legend_monica_abbott_to_have_jersey_retired.aspx |title=UT Legend Monica Abbott to have jersey retired |location=UT Sports |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 104,
+      "chunk_idx": 0,
+      "parent_heading": "Legacy"
+    },
+    {
+      "id": "Monica_Abbott:105:0",
+      "text": "Abbott was the first pitcher in NCAA Division I history to record 500 strikeouts in all four years of her collegiate career.",
+      "title": "Monica_Abbott",
+      "line": 105,
+      "chunk_idx": 0,
+      "parent_heading": "Legacy"
+    },
+    {
+      "id": "Monica_Abbott:106:0",
+      "text": "She was inducted in the Tennessee Athletics hall of fame.<ref>{{cite web |url=https://www.knoxnews.com/story/sports/college/university-of-tennessee/other-sports/2017/10/13/justin-gatlin-monica-abbott-part-tennessee-athletics-hall-fame/758398001/ |title=Justin Gatlin, Monica Abbott part of Tennessee Athletics Hall of Fame |location=Knox News |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 106,
+      "chunk_idx": 0,
+      "parent_heading": "Legacy"
+    },
+    {
+      "id": "Monica_Abbott:107:0",
+      "text": "She was Tennessee's first softball All-American in school history and was named to the All-Women's College World Series team three times.<ref name=\"teamusaathletes\">{{cite web |url=https://www.teamusa.org/usa-softball/athletes/Monica-Abbott |archive-url=https://web.archive.org/web/20140809010732/http://www.teamusa.org/usa-softball/athletes/monica-abbott |url-status=dead |archive-date=August 9, 2014 |title=Monica Abbott |location=Teamusa.org|access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 107,
+      "chunk_idx": 0,
+      "parent_heading": "Legacy"
+    },
+    {
+      "id": "Monica_Abbott:110:0",
+      "text": "Abbott enjoyed tremendous success internationally between 2005 and 2010.  She led Team USA to four World Cup of Softball championships, three Canada Cup titles, and gold medals at both the 2006 and 2010 ISF Women's World Championships.  Abbott pitched the United States to a gold medal at the 2007 Pan Am Games in Rio.<ref name=\"Monica Abbott\"/>   Abbott stepped down from the US Softball National Team in 2010 but returned in 2018 where she helped the USA win another World Championship.<ref>{{cite web |url=https://www.wbsc.org/news/softball-brings-people-together-it-belongs-in-the-olympics|title=USA Softball Star Monica Abbott \"Softball brings people together, it belongs in the Olympics\"|location=WBSC|access-date=2020-08-27}}</ref>  She was also a member of the team that won the 2018, 2019 USA Softball International Cup, 2018 & 2019 Japan Cup and 2019 Pan Am Games.<ref name=\"teamusaathletes\" />",
+      "title": "Monica_Abbott",
+      "line": 110,
+      "chunk_idx": 0,
+      "parent_heading": "US National Team"
+    },
+    {
+      "id": "Monica_Abbott:113:0",
+      "text": "Abbott was selected for the final 15-person Olympic squad as one of three pitchers. On August 11, 2008, Abbott made her Olympic debut for Team USA, pitching the final inning against Venezuela. Abbott then pitched a 5 inning perfect game, striking out 8, as Team USA defeated the Netherlands 8–0. This was the first perfect game pitched in the Olympics.<ref>{{cite web |url=https://www.upi.com/Sports_News/2008/08/17/USA-gets-perfect-game-from-Abbott/56171218981304/ |title=USA gets perfect game from Abbott |location=UPI| access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 113,
+      "chunk_idx": 0,
+      "parent_heading": "2008 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:115:0",
+      "text": "In pool play, Abbott pitched the US to a 7–0 victory against Japan. She then pitched against them in the semi-final securing the 4–1 win and  USA's place in the gold medal game.",
+      "title": "Monica_Abbott",
+      "line": 115,
+      "chunk_idx": 0,
+      "parent_heading": "2008 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:117:0",
+      "text": "Team USA met Japan in the gold medal game and lost 3–1. Abbott pitched the final two innings.<ref name=\"teamusaathletes\" />><ref>{{cite web |url=https://www.teamusa.org/USA-Softball/Team-USA/History/Women/2008/Olympic-Games/Olympic-Games-Box-Scores/Gold-Medal-Game |archive-url=https://web.archive.org/web/20140302034749/http://www.teamusa.org/USA-Softball/Team-USA/History/Women/2008/Olympic-Games/Olympic-Games-Box-Scores/Gold-Medal-Game |url-status=dead |archive-date=March 2, 2014 |title=Gold Medal Game|location=Team USA| access-date=2020-08-27}}</ref>   She finished the Olympics with a 0.29 ERA and a 3–0 record in 24 innings pitched while striking out 32 batters.<ref name=\"teamusaathletes\" />",
+      "title": "Monica_Abbott",
+      "line": 117,
+      "chunk_idx": 0,
+      "parent_heading": "2008 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:120:0",
+      "text": "Abbott agreed to be a part of the Olympic squad,<ref>{{cite web |url=https://www.espn.com/espnw/sports/story/_/id/24020275/softball-star-monica-abbott-return-team-usa-quest-olympic-gold|title=Global ace Monica Abbott on her return to Team USA and her quest for Olympic gold|date=July 10, 2018 |location=ESPN |access-date=2020-08-27}}</ref>  softball's first appearance at the Olympics since 2008.<ref>{{cite web|url=https://www.softballamerica.com/stories/for-monica-abbott-2020-olympics-offers-chance-at-redemption/|title=For Monica Abbott, 2020 Olympics Offers Chance At Redemption|location=Softball America|access-date=2020-08-27|archive-date=August 12, 2020|archive-url=https://web.archive.org/web/20200812092650/https://www.softballamerica.com/stories/for-monica-abbott-2020-olympics-offers-chance-at-redemption/|url-status=dead}}</ref>  The Olympics were postponed to 2021 as a result of the COVID-19 pandemic.<ref>{{cite web",
+      "title": "Monica_Abbott",
+      "line": 120,
+      "chunk_idx": 0,
+      "parent_heading": "2020 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:120:1",
+      "text": "a result of the COVID-19 pandemic.<ref>{{cite web |url=https://www.montereyherald.com/2020/03/31/monica-abbott-of-salinas-staying-sharp-despite-summer-olympics-postponement/|title=Monica Abbott of Salinas staying sharp despite Summer Olympics postponement|date=March 31, 2020|location=Monterey Herald |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 120,
+      "chunk_idx": 1,
+      "parent_heading": "2020 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:122:0",
+      "text": "Abbott started in three matches for Team USA in the [[2020 Summer Olympics]] group stage against Canada, Australia, and Japan. In addition, she came in as the relief pitcher for group stage matches against Italy and Mexico as well as in the gold medal match against Japan. She pitched 20.1 innings with 31 strikeouts, 7 hits, and a 0.00 ERA. Team USA lost to Japan 2–0 in the gold medal match and Abbott earned a silver medal along with the rest of the team.<ref>{{Cite web|url=https://olympicsoftball.wbsc.org/en/2021/e-2021-softball-olympic-games/teams/USA/players/74687|title = United States}}</ref> Following the tournament, she was named onto the WBSC All-Olympic softball team.<ref>{{Cite web|url=https://www.wbsc.org/news/japans-yamato-fujita-named-tokyo-2020-softball-mvp-as-all-olympic-team-revealed|title=Japan's Yamato Fujita named Tokyo 2020 softball MVP as All-Olympic team revealed}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 122,
+      "chunk_idx": 0,
+      "parent_heading": "2020 Olympics"
+    },
+    {
+      "id": "Monica_Abbott:125:0",
+      "text": "Abbott has been a member of five winning NPF teams, being named MVP in all those championships. She was also a NPF runner-up in 2009 and 2013.<ref>{{cite web |url=https://www.npr.org/sections/thetwo-way/2016/05/05/476901885/softball-pitcher-monica-abbott-signs-record-1-million-contract|title=Softball Pitcher Monica Abbott Signs Record $1 Million Contract |website=NPR |date=May 5, 2016 |location=NPR| access-date=2020-08-27|last1=Wagner |first1=Laura }}</ref>",
+      "title": "Monica_Abbott",
+      "line": 125,
+      "chunk_idx": 0,
+      "parent_heading": "Professional career"
+    },
+    {
+      "id": "Monica_Abbott:128:0",
+      "text": "Abbott debuted in the [[National Pro Fastpitch|NPF]] on August 2, 2007, by striking out a career best 18 batters in a 10-inning victory against the [[Rockford Thunder]].<ref>{{cite web |url=http://www.profastpitch.com/news/npfnews/index.html?article_id=878 |title=Washington, Abbott Knock Off Osterman, Thunder |location=Web.archive.org |archive-url=https://web.archive.org/web/20150905142454/http://www.profastpitch.com/news/npfnews/index.html?article_id=878 |access-date=2020-06-29|url-status=usurped |archive-date=September 5, 2015 }}</ref> They won the 2007 NPF Championship, vs Rockford when Abbott threw a no hitter in the final.<ref>{{cite web |url=https://nfca.org/divnews/general/glory-celebrates-first-npf-championship-3258|title=Glory Celebrates First NPF Championship |date=August 27, 2007 |location=NFCA| access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 128,
+      "chunk_idx": 0,
+      "parent_heading": "NPF"
+    },
+    {
+      "id": "Monica_Abbott:130:0",
+      "text": "In 2009 she played for the USSSA Pride as a runner up and in 2010 was traded to the Tennessee Diamonds.<ref>{{cite web |url=https://utsports.com/news/2010/5/4/Monica_Abbott_and_Shannon_Doepking_Traded_to_NPF_s_Tennessee_Diamonds.aspx |title=Monica Abbott and Shannon Doepking traded to NPF's Tennessee Diamonds|location=UT Sports |access-date=2020-08-27}}</ref>   She signed as a free agent  with the Chicago Bandits from 2011 to 2015.<ref name=\"Monica Abbott\"/>",
+      "title": "Monica_Abbott",
+      "line": 130,
+      "chunk_idx": 0,
+      "parent_heading": "NPF"
+    },
+    {
+      "id": "Monica_Abbott:131:0",
+      "text": "On July 23, 2015, Abbott pitched her second perfect game as a member of the [[Chicago Bandits]], beating the [[Dallas Charge]], 10–0.<ref>{{cite web |author1=NPF |title=Bandits Rout Charge Behind Abbott's Perfect Game |url=http://www.sportspagemagazine.com/content/os/sb-os/c-sb-os/art-c-sb-os/bandits-rout-charge-behind-abbotts-perfect-game.shtml?63463 |website=SportsPageMagazine.com |access-date=July 27, 2015 |date=July 24, 2015 |url-status=dead |archive-url=https://web.archive.org/web/20150910044145/http://www.sportspagemagazine.com/content/os/sb-os/c-sb-os/art-c-sb-os/bandits-rout-charge-behind-abbotts-perfect-game.shtml?63463 |archive-date=September 10, 2015  }}</ref>",
+      "title": "Monica_Abbott",
+      "line": 131,
+      "chunk_idx": 0,
+      "parent_heading": "NPF"
+    },
+    {
+      "id": "Monica_Abbott:132:0",
+      "text": "In May 2016, the [[Scrap Yard Dawgs]], a [[National Pro Fastpitch]] team, signed Abbott to a six-year contract, believed to be worth $1 million<ref>{{cite web |last=Hays |first=Graham |title=Monica Abbott Wants Change After Signing $1 Million Contract with NPF Expansion Team |url=https://www.espn.com/espnw/sports/story/_/id/15464430/pitcher-monica-abbott-signs-1-million-contract-national-pro-fastpitch-expansion-team |website=[[ESPNW.com]] |date=May 5, 2016 |access-date=May 5, 2016}}</ref> and the highest salary paid by a professional women's sports team in the United States.<ref name=\"cfmco\">{{cite web |url=https://www.cfmco.org/monica-abbott-an-inspiration-on-and-off-the-field/|title=Monica Abbott: An Inspiration On and Off the Field |date=July 14, 2013 |location=CFMCO| access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 132,
+      "chunk_idx": 0,
+      "parent_heading": "NPF"
+    },
+    {
+      "id": "Monica_Abbott:134:0",
+      "text": "For her career she is the most decorated pitcher in the league history with five Pitcher of The Year awards and 9 All-NPF Team selections. Currently, she also holds the career wins and strikeouts crowns (the second pitcher to achieve each milestone and the only to have both) along with the no-hitters (6), shutouts record (also the only pitcher to cross the 40 and 50 total). She also ranks top-10 in ERA, WHIP, innings and strikeout ratio (10.1).",
+      "title": "Monica_Abbott",
+      "line": 134,
+      "chunk_idx": 0,
+      "parent_heading": "NPF"
+    },
+    {
+      "id": "Monica_Abbott:138:0",
+      "text": "In 2010, Abbott joined the Japan Softball League (JSL). In her first season abroad, she led the circuit in strikeouts, ERA and was named league MVP while leading her [[Toyota Red Terriers|Toyota]] team to the Japan Softball League title.<ref>{{cite web|url=http://dailydsports.com/monica-abbott-2/#:~:text=In%202010%2C%20Abbott%20joined%20the,the%20Japan%20Softball%20League%20title.|title=Monica Abbott|date=August 10, 2018|location=Daily Dose|access-date=2020-08-27|archive-date=January 29, 2020|archive-url=https://web.archive.org/web/20200129174533/http://dailydsports.com/monica-abbott-2/#:~:text=In%202010%2C%20Abbott%20joined%20the,the%20Japan%20Softball%20League%20title.|url-status=dead}}</ref>    She pitched a perfect game in the final, then threw a no-hitter in the championship game the following year to lead Toyota to back-to-back titles. Toyota went on to threepeat for the JSL titles in 2010, 2011, 2012.<ref>{{cite web",
+      "title": "Monica_Abbott",
+      "line": 138,
+      "chunk_idx": 0,
+      "parent_heading": "Japan Softball League"
+    },
+    {
+      "id": "Monica_Abbott:138:1",
+      "text": "he JSL titles in 2010, 2011, 2012.<ref>{{cite web |url=https://www.flosoftball.com/articles/5058197-monica-abbott-leads-toyota-red-terriers-to-japan-softball-league-title |title=Monica Abbott Leads Toyota Red Terriers to Japan Softball League Title|date=November 28, 2016 |location=Flo Softball |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 138,
+      "chunk_idx": 1,
+      "parent_heading": "Japan Softball League"
+    },
+    {
+      "id": "Monica_Abbott:139:0",
+      "text": "They also won titles in 2014,  2016, & 2018",
+      "title": "Monica_Abbott",
+      "line": 139,
+      "chunk_idx": 0,
+      "parent_heading": "Japan Softball League"
+    },
+    {
+      "id": "Monica_Abbott:140:0",
+      "text": "She was a 5x MVP winning in 2010, 2011, 2012, 2016, 2018)<ref>{{cite web |url=https://www.wbsc.org/news/toyota-motors-red-terriers-clinches-japan-softball-league-monica-abbot-named-mvp |title=Olympic pitchers battle for Japan Softball League title, Monica Abbott named MVP|location=WBSC |access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 140,
+      "chunk_idx": 0,
+      "parent_heading": "Japan Softball League"
+    },
+    {
+      "id": "Monica_Abbott:141:0",
+      "text": "As of 2020, she is in her 11th season.",
+      "title": "Monica_Abbott",
+      "line": 141,
+      "chunk_idx": 0,
+      "parent_heading": "Japan Softball League"
+    },
+    {
+      "id": "Monica_Abbott:144:0",
+      "text": "Abbott always wears Number 14.<ref name=\"teamusaathletes\" />",
+      "title": "Monica_Abbott",
+      "line": 144,
+      "chunk_idx": 0,
+      "parent_heading": "Miscellaneous"
+    },
+    {
+      "id": "Monica_Abbott:145:0",
+      "text": "At Tennessee she wore #7 and it was retired by Tennessee.<ref>{{cite web |url=https://utsports.com/news/2013/2/28/ut_legend_monica_abbott_to_have_jersey_retired.aspx |title=USA softball pitcher Monica Abbott's long wait for Olympics delayed at least another year |location=UT Sports |access-date=2020-08-27}}</ref><ref>{{cite web |url=https://www.knoxnews.com/story/sports/college/university-of-tennessee/other-sports/2020/03/24/olympics-usa-softball-pitcher-monica-abbott-lady-vols/2912386001/ |title=UT Legend Monica Abbott to have jersey retired |location=Knox News |access-date=2020-09-02}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 145,
+      "chunk_idx": 0,
+      "parent_heading": "Miscellaneous"
+    },
+    {
+      "id": "Monica_Abbott:147:0",
+      "text": "Abbott founded the Monica Abbott Scholarship fund to support the education of female multi-sport athletes who demonstrate leadership both in the classroom and on the field. In addition, she hosts clinics with young softball players across the United States.<ref name=\"cfmco\" /> Abbott hosts about 16 different instructional clinics for children under the age of 18 each year. As demand for more clinics has gotten stronger, Abbott is planning to introduce an online academy to help her reach more youth. The academy will feature video tutorials that go in-depth into the three focuses of Abbott's pitching style: rise ball, power pitching, and basic mechanics and leg drive.<ref name=\"frontofficesports2020\">{{cite web |url=https://frontofficesports.com/monica-abbott-softball-2020/ |title=Team USA's Monica Abbott Growing American Softball Amidst The Sport's Olympic Return |date=December 16, 2019 |location=Front Office Sports |access-date=2020-08-27 |archive-date=December 8, 2021",
+      "title": "Monica_Abbott",
+      "line": 147,
+      "chunk_idx": 0,
+      "parent_heading": "Miscellaneous"
+    },
+    {
+      "id": "Monica_Abbott:147:1",
+      "text": "ss-date=2020-08-27 |archive-date=December 8, 2021 |archive-url=https://web.archive.org/web/20211208161850/https://frontofficesports.com/monica-abbott-softball-2020/ |url-status=dead }}</ref>",
+      "title": "Monica_Abbott",
+      "line": 147,
+      "chunk_idx": 1,
+      "parent_heading": "Miscellaneous"
+    },
+    {
+      "id": "Monica_Abbott:149:0",
+      "text": "Her fans are called Moniacs.<ref name=\"frontofficesports2020\" />",
+      "title": "Monica_Abbott",
+      "line": 149,
+      "chunk_idx": 0,
+      "parent_heading": "Miscellaneous"
+    },
+    {
+      "id": "Monica_Abbott:152:0",
+      "text": "Abbott is simultaneously the NCAA Division I leader in Victories (189), Shutouts (112), Strikeouts (2,440), Single-Season Strikeouts (724) and innings pitched. During her senior season in college, she set the record for the most strikeouts in a Division I softball season.",
+      "title": "Monica_Abbott",
+      "line": 152,
+      "chunk_idx": 0,
+      "parent_heading": "Career records"
+    },
+    {
+      "id": "Monica_Abbott:154:0",
+      "text": "She also holds the career records in wins, strikeouts, no hitters and shutouts for the National Pro Fastpitch.",
+      "title": "Monica_Abbott",
+      "line": 154,
+      "chunk_idx": 0,
+      "parent_heading": "Career records"
+    },
+    {
+      "id": "Monica_Abbott:156:0",
+      "text": "In Japan, Abbott was a 6-time champion and a 5-time MVP. She is currently a member of the independent \"This is Us\" team.<ref>{{cite web |url=https://www.thisisussoftball.com/athletes |title=This Is Us Athletes |location=Thisisussoftball.com |access-date=2020-06-28}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 156,
+      "chunk_idx": 0,
+      "parent_heading": "Career records"
+    },
+    {
+      "id": "Monica_Abbott:158:0",
+      "text": "Abbott is in the Guinness Book of Records with the fastest softball pitch ever, reaching 77 miles per hour back on June 16, 2012, in a National Pro Fastpitch (NPF) game between Abbott's Chicago Bandits and the Carolina Diamonds.<ref>{{cite web |url=https://www.guinnessworldrecords.com/world-records/fastest-womens-softball-pitch |title=Fastest Softball Pitch (Female)|location=Guinness World Records|access-date=2020-08-27}}</ref>",
+      "title": "Monica_Abbott",
+      "line": 158,
+      "chunk_idx": 0,
+      "parent_heading": "Career records"
+    },
+    {
+      "id": "Monica_Abbott:161:0",
+      "text": "* [[NCAA Division I]] tied-2nd highest 7-inning strikeout total of all-time (20), set on March 26 of her freshman year vs Liberty University",
+      "title": "Monica_Abbott",
+      "line": 161,
+      "chunk_idx": 0,
+      "parent_heading": "Single-game accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:162:0",
+      "text": "* 6 games of at least 17 strikeouts in a 7-inning game, a mark only accomplished 20 times in NCAA Division I history (including Abbott's performances)",
+      "title": "Monica_Abbott",
+      "line": 162,
+      "chunk_idx": 0,
+      "parent_heading": "Single-game accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:165:0",
+      "text": "* 2007 [[USA Softball Collegiate Player of the Year]]",
+      "title": "Monica_Abbott",
+      "line": 165,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:166:0",
+      "text": "* Only Player with more than one 50-win season in a career (2)",
+      "title": "Monica_Abbott",
+      "line": 166,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:167:0",
+      "text": "* Only Player with four seasons of 40+ wins in a career",
+      "title": "Monica_Abbott",
+      "line": 167,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:168:0",
+      "text": "* Only Player with four 500-strikeout seasons (and two 600-strikeout seasons) in a collegiate career",
+      "title": "Monica_Abbott",
+      "line": 168,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:169:0",
+      "text": "* Most strikeouts in a season (2007) – 724",
+      "title": "Monica_Abbott",
+      "line": 169,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:170:0",
+      "text": "* Most games pitched in a season (2005) – 69",
+      "title": "Monica_Abbott",
+      "line": 170,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:171:0",
+      "text": "* Most wins and most strikeouts in a season by a freshman (2004) – 45 wins and 582 strikeouts",
+      "title": "Monica_Abbott",
+      "line": 171,
+      "chunk_idx": 0,
+      "parent_heading": "Season accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:174:0",
+      "text": "* 2,440 career [[NCAA Division I Softball career strikeouts list|NCAA Division I strikeouts]] (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 174,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:175:0",
+      "text": "* 189 career [[NCAA Division I Softball career wins list|NCAA Division I wins]] (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 175,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:176:0",
+      "text": "* 112 career shutouts (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 176,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:177:0",
+      "text": "* 253 career games pitched (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 177,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:178:0",
+      "text": "* 206 career games started (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 178,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:179:0",
+      "text": "* 1448 career innings pitched (1st all-time)",
+      "title": "Monica_Abbott",
+      "line": 179,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:180:0",
+      "text": "* 178 career complete games (2nd all-time)",
+      "title": "Monica_Abbott",
+      "line": 180,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:181:0",
+      "text": "* 11.80 career strikeouts per 7 innings (3rd all-time)",
+      "title": "Monica_Abbott",
+      "line": 181,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:182:0",
+      "text": "* .848 career win percentage",
+      "title": "Monica_Abbott",
+      "line": 182,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:183:0",
+      "text": "* 16 career saves (tied-10th all-time)",
+      "title": "Monica_Abbott",
+      "line": 183,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:184:0",
+      "text": "* 23 career NCAA Division I no-hitters (2nd all-time)",
+      "title": "Monica_Abbott",
+      "line": 184,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:185:0",
+      "text": "* 6 career NCAA Division I perfect games (2nd all-time)",
+      "title": "Monica_Abbott",
+      "line": 185,
+      "chunk_idx": 0,
+      "parent_heading": "Career accomplishments"
+    },
+    {
+      "id": "Monica_Abbott:188:0",
+      "text": "* 6× Japan Softball League Champion (2010, 2011, 2012, 2014, 2016, 2018)",
+      "title": "Monica_Abbott",
+      "line": 188,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:189:0",
+      "text": "* 5× Japan Softball League MVP (2010, 2011, 2012, 2016, 2018)",
+      "title": "Monica_Abbott",
+      "line": 189,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:190:0",
+      "text": "* 2008 Olympic Silver Medalist",
+      "title": "Monica_Abbott",
+      "line": 190,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:191:0",
+      "text": "* Pitched First Perfect Game in Olympic History",
+      "title": "Monica_Abbott",
+      "line": 191,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:192:0",
+      "text": "* 3× World Champion Gold Medalist",
+      "title": "Monica_Abbott",
+      "line": 192,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:193:0",
+      "text": "* 2× Pan American Gold Medalist",
+      "title": "Monica_Abbott",
+      "line": 193,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:194:0",
+      "text": "* 5× National Pro Fastpitch Champion (2007, 2011, 2013, 2015, 2017)",
+      "title": "Monica_Abbott",
+      "line": 194,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:195:0",
+      "text": "* 4× NPF MVP (2007, 2011, 2015, 2017)",
+      "title": "Monica_Abbott",
+      "line": 195,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:196:0",
+      "text": "* 5× NPF Pitcher of the Year (2011, 2012, 2015, 2016, 2017)",
+      "title": "Monica_Abbott",
+      "line": 196,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:197:0",
+      "text": "* All-NPF Selection (2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017)",
+      "title": "Monica_Abbott",
+      "line": 197,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:198:0",
+      "text": "* Women's Sports Foundation Sportswoman of the Year (2007)",
+      "title": "Monica_Abbott",
+      "line": 198,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:199:0",
+      "text": "* Honda Award Winner in Softball (2007)",
+      "title": "Monica_Abbott",
+      "line": 199,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:200:0",
+      "text": "* 4× All-American",
+      "title": "Monica_Abbott",
+      "line": 200,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:201:0",
+      "text": "* First pitcher in D1 to record 500 Strikeouts all 4 seasons at the collegiate level.",
+      "title": "Monica_Abbott",
+      "line": 201,
+      "chunk_idx": 0,
+      "parent_heading": "Career highlights"
+    },
+    {
+      "id": "Monica_Abbott:205:0",
+      "text": "{| class=\"wikitable\" style=\"text-align:center;\"",
+      "title": "Monica_Abbott",
+      "line": 205,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:206:0",
+      "text": "|+[[United States women's national softball team|Team USA]]",
+      "title": "Monica_Abbott",
+      "line": 206,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:207:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 207,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:208:0",
+      "text": "| '''YEAR'''",
+      "title": "Monica_Abbott",
+      "line": 208,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:209:0",
+      "text": "| [[Win (baseball statistics)|W]]",
+      "title": "Monica_Abbott",
+      "line": 209,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:210:0",
+      "text": "| [[Loss (baseball statistics)|L]]",
+      "title": "Monica_Abbott",
+      "line": 210,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:211:0",
+      "text": "| [[Games pitched|GP]]",
+      "title": "Monica_Abbott",
+      "line": 211,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:212:0",
+      "text": "| [[Games started|GS]]",
+      "title": "Monica_Abbott",
+      "line": 212,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:213:0",
+      "text": "| [[Complete game|CG]]",
+      "title": "Monica_Abbott",
+      "line": 213,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:214:0",
+      "text": "| [[Shutout|SHO]]",
+      "title": "Monica_Abbott",
+      "line": 214,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:215:0",
+      "text": "| [[Save (sport)|SV]]",
+      "title": "Monica_Abbott",
+      "line": 215,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:216:0",
+      "text": "| [[Innings pitched|IP]]",
+      "title": "Monica_Abbott",
+      "line": 216,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:217:0",
+      "text": "| [[Hit (baseball)|H]]",
+      "title": "Monica_Abbott",
+      "line": 217,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:218:0",
+      "text": "| [[Softball#Scoring runs|R]]",
+      "title": "Monica_Abbott",
+      "line": 218,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:219:0",
+      "text": "| [[Earned run|ER]]",
+      "title": "Monica_Abbott",
+      "line": 219,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:220:0",
+      "text": "| [[Base on balls|BB]]",
+      "title": "Monica_Abbott",
+      "line": 220,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:221:0",
+      "text": "| [[Strikeout|SO]]",
+      "title": "Monica_Abbott",
+      "line": 221,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:222:0",
+      "text": "| [[Earned run average|ERA]]",
+      "title": "Monica_Abbott",
+      "line": 222,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:223:0",
+      "text": "| [[Walks plus hits per innings pitched|WHIP]]",
+      "title": "Monica_Abbott",
+      "line": 223,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:224:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 224,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:225:0",
+      "text": "| '''2004'''",
+      "title": "Monica_Abbott",
+      "line": 225,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:226:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 226,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:227:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 227,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:228:0",
+      "text": "| 8",
+      "title": "Monica_Abbott",
+      "line": 228,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:229:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 229,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:230:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 230,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:231:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 231,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:232:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 232,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:233:0",
+      "text": "| 32.0",
+      "title": "Monica_Abbott",
+      "line": 233,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:234:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 234,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:235:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 235,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:236:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 236,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:237:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 237,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:238:0",
+      "text": "| 46",
+      "title": "Monica_Abbott",
+      "line": 238,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:239:0",
+      "text": "| 0.43",
+      "title": "Monica_Abbott",
+      "line": 239,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:240:0",
+      "text": "| 0.68",
+      "title": "Monica_Abbott",
+      "line": 240,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:241:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 241,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:242:0",
+      "text": "| '''2005'''",
+      "title": "Monica_Abbott",
+      "line": 242,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:243:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 243,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:244:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 244,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:245:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 245,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:246:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 246,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:247:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 247,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:248:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 248,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:249:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 249,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:250:0",
+      "text": "| 7.0",
+      "title": "Monica_Abbott",
+      "line": 250,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:251:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 251,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:252:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 252,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:253:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 253,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:254:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 254,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:255:0",
+      "text": "| 8",
+      "title": "Monica_Abbott",
+      "line": 255,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:256:0",
+      "text": "| 4.00",
+      "title": "Monica_Abbott",
+      "line": 256,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:257:0",
+      "text": "| 1.14",
+      "title": "Monica_Abbott",
+      "line": 257,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:258:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 258,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:259:0",
+      "text": "| '''2008'''",
+      "title": "Monica_Abbott",
+      "line": 259,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:260:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 260,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:261:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 261,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:262:0",
+      "text": "| 12",
+      "title": "Monica_Abbott",
+      "line": 262,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:263:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 263,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:264:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 264,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:265:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 265,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:266:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 266,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:267:0",
+      "text": "| 37.0",
+      "title": "Monica_Abbott",
+      "line": 267,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:268:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 268,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:269:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 269,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:270:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 270,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:271:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 271,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:272:0",
+      "text": "| 71",
+      "title": "Monica_Abbott",
+      "line": 272,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:273:0",
+      "text": "| 0.56",
+      "title": "Monica_Abbott",
+      "line": 273,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:274:0",
+      "text": "| 0.43",
+      "title": "Monica_Abbott",
+      "line": 274,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:275:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 275,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:276:0",
+      "text": "| '''2020'''",
+      "title": "Monica_Abbott",
+      "line": 276,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:277:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 277,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:278:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 278,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:279:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 279,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:280:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 280,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:281:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 281,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:282:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 282,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:283:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 283,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:284:0",
+      "text": "| 31.2",
+      "title": "Monica_Abbott",
+      "line": 284,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:285:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 285,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:286:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 286,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:287:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 287,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:288:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 288,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:289:0",
+      "text": "| 68",
+      "title": "Monica_Abbott",
+      "line": 289,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:290:0",
+      "text": "| 0.00",
+      "title": "Monica_Abbott",
+      "line": 290,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:291:0",
+      "text": "| 0.22",
+      "title": "Monica_Abbott",
+      "line": 291,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:292:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 292,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:293:0",
+      "text": "| '''2021'''",
+      "title": "Monica_Abbott",
+      "line": 293,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:294:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 294,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:295:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 295,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:296:0",
+      "text": "| 11",
+      "title": "Monica_Abbott",
+      "line": 296,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:297:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 297,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:298:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 298,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:299:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 299,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:300:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 300,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:301:0",
+      "text": "| 53.2",
+      "title": "Monica_Abbott",
+      "line": 301,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:302:0",
+      "text": "| 24",
+      "title": "Monica_Abbott",
+      "line": 302,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:303:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 303,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:304:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 304,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:305:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 305,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:306:0",
+      "text": "| 101",
+      "title": "Monica_Abbott",
+      "line": 306,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:307:0",
+      "text": "| 0.26",
+      "title": "Monica_Abbott",
+      "line": 307,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:308:0",
+      "text": "| 0.58",
+      "title": "Monica_Abbott",
+      "line": 308,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:309:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 309,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:310:0",
+      "text": "| '''[[2020 Summer Olympics|Olympics]]'''",
+      "title": "Monica_Abbott",
+      "line": 310,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:311:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 311,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:312:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 312,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:313:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 313,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:314:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 314,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:315:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 315,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:316:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 316,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:317:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 317,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:318:0",
+      "text": "| 20.1",
+      "title": "Monica_Abbott",
+      "line": 318,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:319:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 319,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:320:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 320,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:321:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 321,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:322:0",
+      "text": "| 9",
+      "title": "Monica_Abbott",
+      "line": 322,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:323:0",
+      "text": "| 31",
+      "title": "Monica_Abbott",
+      "line": 323,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:324:0",
+      "text": "| 0.00",
+      "title": "Monica_Abbott",
+      "line": 324,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:325:0",
+      "text": "| 0.79",
+      "title": "Monica_Abbott",
+      "line": 325,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:326:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 326,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:327:0",
+      "text": "| '''TOTALS'''",
+      "title": "Monica_Abbott",
+      "line": 327,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:328:0",
+      "text": "| '''28'''",
+      "title": "Monica_Abbott",
+      "line": 328,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:329:0",
+      "text": "| '''1'''",
+      "title": "Monica_Abbott",
+      "line": 329,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:330:0",
+      "text": "| '''46'''",
+      "title": "Monica_Abbott",
+      "line": 330,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:331:0",
+      "text": "| '''24'''",
+      "title": "Monica_Abbott",
+      "line": 331,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:332:0",
+      "text": "| '''12'''",
+      "title": "Monica_Abbott",
+      "line": 332,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:333:0",
+      "text": "| '''7'''",
+      "title": "Monica_Abbott",
+      "line": 333,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:334:0",
+      "text": "| '''8'''",
+      "title": "Monica_Abbott",
+      "line": 334,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:335:0",
+      "text": "| '''181.2'''",
+      "title": "Monica_Abbott",
+      "line": 335,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:336:0",
+      "text": "| '''71'''",
+      "title": "Monica_Abbott",
+      "line": 336,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:337:0",
+      "text": "| '''14'''",
+      "title": "Monica_Abbott",
+      "line": 337,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:338:0",
+      "text": "| '''11'''",
+      "title": "Monica_Abbott",
+      "line": 338,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:339:0",
+      "text": "| '''29'''",
+      "title": "Monica_Abbott",
+      "line": 339,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:340:0",
+      "text": "| '''325'''",
+      "title": "Monica_Abbott",
+      "line": 340,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:341:0",
+      "text": "| '''0.42'''",
+      "title": "Monica_Abbott",
+      "line": 341,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:342:0",
+      "text": "| '''0.55'''",
+      "title": "Monica_Abbott",
+      "line": 342,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:343:0",
+      "text": "|}",
+      "title": "Monica_Abbott",
+      "line": 343,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:345:0",
+      "text": "{| class=\"wikitable\" style=\"text-align:center;\"",
+      "title": "Monica_Abbott",
+      "line": 345,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:346:0",
+      "text": "|+[[Tennessee Lady Volunteers softball|Tennessee Lady Volunteers]]",
+      "title": "Monica_Abbott",
+      "line": 346,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:347:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 347,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:348:0",
+      "text": "| '''YEAR'''",
+      "title": "Monica_Abbott",
+      "line": 348,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:349:0",
+      "text": "| [[Win (baseball statistics)|W]]",
+      "title": "Monica_Abbott",
+      "line": 349,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:350:0",
+      "text": "| [[Loss (baseball statistics)|L]]",
+      "title": "Monica_Abbott",
+      "line": 350,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:351:0",
+      "text": "| [[Games pitched|GP]]",
+      "title": "Monica_Abbott",
+      "line": 351,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:352:0",
+      "text": "| [[Games started|GS]]",
+      "title": "Monica_Abbott",
+      "line": 352,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:353:0",
+      "text": "| [[Complete game|CG]]",
+      "title": "Monica_Abbott",
+      "line": 353,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:354:0",
+      "text": "| [[Shutout|Sh]]",
+      "title": "Monica_Abbott",
+      "line": 354,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:355:0",
+      "text": "| [[Save (sport)|SV]]",
+      "title": "Monica_Abbott",
+      "line": 355,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:356:0",
+      "text": "| [[Innings pitched|IP]]",
+      "title": "Monica_Abbott",
+      "line": 356,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:357:0",
+      "text": "| [[Hit (baseball)|H]]",
+      "title": "Monica_Abbott",
+      "line": 357,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:358:0",
+      "text": "| [[Softball#Scoring runs|R]]",
+      "title": "Monica_Abbott",
+      "line": 358,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:359:0",
+      "text": "| [[Earned run|ER]]",
+      "title": "Monica_Abbott",
+      "line": 359,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:360:0",
+      "text": "| [[Base on balls|BB]]",
+      "title": "Monica_Abbott",
+      "line": 360,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:361:0",
+      "text": "| [[Strikeout|SO]]",
+      "title": "Monica_Abbott",
+      "line": 361,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:362:0",
+      "text": "| [[Earned run average|ERA]]",
+      "title": "Monica_Abbott",
+      "line": 362,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:363:0",
+      "text": "| [[Walks plus hits per innings pitched|WHIP]]",
+      "title": "Monica_Abbott",
+      "line": 363,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:364:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 364,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:365:0",
+      "text": "| '''2004'''",
+      "title": "Monica_Abbott",
+      "line": 365,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:366:0",
+      "text": "| 45",
+      "title": "Monica_Abbott",
+      "line": 366,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:367:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 367,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:368:0",
+      "text": "| 59",
+      "title": "Monica_Abbott",
+      "line": 368,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:369:0",
+      "text": "| 47",
+      "title": "Monica_Abbott",
+      "line": 369,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:370:0",
+      "text": "| 44",
+      "title": "Monica_Abbott",
+      "line": 370,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:371:0",
+      "text": "| 24",
+      "title": "Monica_Abbott",
+      "line": 371,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:372:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 372,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:373:0",
+      "text": "| 352.0",
+      "title": "Monica_Abbott",
+      "line": 373,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:374:0",
+      "text": "| 165",
+      "title": "Monica_Abbott",
+      "line": 374,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:375:0",
+      "text": "| 72",
+      "title": "Monica_Abbott",
+      "line": 375,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:376:0",
+      "text": "| 52",
+      "title": "Monica_Abbott",
+      "line": 376,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:377:0",
+      "text": "| 57",
+      "title": "Monica_Abbott",
+      "line": 377,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:378:0",
+      "text": "| 582",
+      "title": "Monica_Abbott",
+      "line": 378,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:379:0",
+      "text": "| 1.03",
+      "title": "Monica_Abbott",
+      "line": 379,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:380:0",
+      "text": "| 0.63",
+      "title": "Monica_Abbott",
+      "line": 380,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:381:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 381,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:382:0",
+      "text": "| '''2005'''",
+      "title": "Monica_Abbott",
+      "line": 382,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:383:0",
+      "text": "| 50",
+      "title": "Monica_Abbott",
+      "line": 383,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:384:0",
+      "text": "| 9",
+      "title": "Monica_Abbott",
+      "line": 384,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:385:0",
+      "text": "| 69",
+      "title": "Monica_Abbott",
+      "line": 385,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:386:0",
+      "text": "| 56",
+      "title": "Monica_Abbott",
+      "line": 386,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:387:0",
+      "text": "| 47",
+      "title": "Monica_Abbott",
+      "line": 387,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:388:0",
+      "text": "| 34",
+      "title": "Monica_Abbott",
+      "line": 388,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:389:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 389,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:390:0",
+      "text": "| 392.0",
+      "title": "Monica_Abbott",
+      "line": 390,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:391:0",
+      "text": "| 162",
+      "title": "Monica_Abbott",
+      "line": 391,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:392:0",
+      "text": "| 37",
+      "title": "Monica_Abbott",
+      "line": 392,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:393:0",
+      "text": "| 29",
+      "title": "Monica_Abbott",
+      "line": 393,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:394:0",
+      "text": "| 45",
+      "title": "Monica_Abbott",
+      "line": 394,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:395:0",
+      "text": "| 603",
+      "title": "Monica_Abbott",
+      "line": 395,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:396:0",
+      "text": "| 0.52",
+      "title": "Monica_Abbott",
+      "line": 396,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:397:0",
+      "text": "| 0.53",
+      "title": "Monica_Abbott",
+      "line": 397,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:398:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 398,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:399:0",
+      "text": "| '''2006'''",
+      "title": "Monica_Abbott",
+      "line": 399,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:400:0",
+      "text": "| 44",
+      "title": "Monica_Abbott",
+      "line": 400,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:401:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 401,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:402:0",
+      "text": "| 62",
+      "title": "Monica_Abbott",
+      "line": 402,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:403:0",
+      "text": "| 51",
+      "title": "Monica_Abbott",
+      "line": 403,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:404:0",
+      "text": "| 42",
+      "title": "Monica_Abbott",
+      "line": 404,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:405:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 405,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:406:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 406,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:407:0",
+      "text": "| 345.2",
+      "title": "Monica_Abbott",
+      "line": 407,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:408:0",
+      "text": "| 186",
+      "title": "Monica_Abbott",
+      "line": 408,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:409:0",
+      "text": "| 64",
+      "title": "Monica_Abbott",
+      "line": 409,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:410:0",
+      "text": "| 47",
+      "title": "Monica_Abbott",
+      "line": 410,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:411:0",
+      "text": "| 48",
+      "title": "Monica_Abbott",
+      "line": 411,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:412:0",
+      "text": "| 531",
+      "title": "Monica_Abbott",
+      "line": 412,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:413:0",
+      "text": "| 0.95",
+      "title": "Monica_Abbott",
+      "line": 413,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:414:0",
+      "text": "| 0.68",
+      "title": "Monica_Abbott",
+      "line": 414,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:415:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 415,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:416:0",
+      "text": "| '''2007'''",
+      "title": "Monica_Abbott",
+      "line": 416,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:417:0",
+      "text": "| 50",
+      "title": "Monica_Abbott",
+      "line": 417,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:418:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 418,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:419:0",
+      "text": "| 63",
+      "title": "Monica_Abbott",
+      "line": 419,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:420:0",
+      "text": "| 52",
+      "title": "Monica_Abbott",
+      "line": 420,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:421:0",
+      "text": "| 45",
+      "title": "Monica_Abbott",
+      "line": 421,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:422:0",
+      "text": "| 29",
+      "title": "Monica_Abbott",
+      "line": 422,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:423:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 423,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:424:0",
+      "text": "| 358.1",
+      "title": "Monica_Abbott",
+      "line": 424,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:425:0",
+      "text": "| 136",
+      "title": "Monica_Abbott",
+      "line": 425,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:426:0",
+      "text": "| 36",
+      "title": "Monica_Abbott",
+      "line": 426,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:427:0",
+      "text": "| 35",
+      "title": "Monica_Abbott",
+      "line": 427,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:428:0",
+      "text": "| 63",
+      "title": "Monica_Abbott",
+      "line": 428,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:429:0",
+      "text": "| 724",
+      "title": "Monica_Abbott",
+      "line": 429,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:430:0",
+      "text": "| 0.68",
+      "title": "Monica_Abbott",
+      "line": 430,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:431:0",
+      "text": "| 0.55",
+      "title": "Monica_Abbott",
+      "line": 431,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:432:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 432,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:433:0",
+      "text": "| '''TOTALS'''",
+      "title": "Monica_Abbott",
+      "line": 433,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:434:0",
+      "text": "| '''189'''",
+      "title": "Monica_Abbott",
+      "line": 434,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:435:0",
+      "text": "| '''34'''",
+      "title": "Monica_Abbott",
+      "line": 435,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:436:0",
+      "text": "| '''253'''",
+      "title": "Monica_Abbott",
+      "line": 436,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:437:0",
+      "text": "| '''206'''",
+      "title": "Monica_Abbott",
+      "line": 437,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:438:0",
+      "text": "| '''178'''",
+      "title": "Monica_Abbott",
+      "line": 438,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:439:0",
+      "text": "| '''112'''",
+      "title": "Monica_Abbott",
+      "line": 439,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:440:0",
+      "text": "| '''16'''",
+      "title": "Monica_Abbott",
+      "line": 440,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:441:0",
+      "text": "| '''1448.0'''",
+      "title": "Monica_Abbott",
+      "line": 441,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:442:0",
+      "text": "| '''649'''",
+      "title": "Monica_Abbott",
+      "line": 442,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:443:0",
+      "text": "| '''209'''",
+      "title": "Monica_Abbott",
+      "line": 443,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:444:0",
+      "text": "| '''163'''",
+      "title": "Monica_Abbott",
+      "line": 444,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:445:0",
+      "text": "| '''213'''",
+      "title": "Monica_Abbott",
+      "line": 445,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:446:0",
+      "text": "| '''2440'''",
+      "title": "Monica_Abbott",
+      "line": 446,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:447:0",
+      "text": "| '''0.79'''",
+      "title": "Monica_Abbott",
+      "line": 447,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:448:0",
+      "text": "| '''0.59'''",
+      "title": "Monica_Abbott",
+      "line": 448,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:449:0",
+      "text": "|}",
+      "title": "Monica_Abbott",
+      "line": 449,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:451:0",
+      "text": "{| class=\"wikitable\" style=\"text-align:center;\"",
+      "title": "Monica_Abbott",
+      "line": 451,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:452:0",
+      "text": "|+[[National Pro Fastpitch]]",
+      "title": "Monica_Abbott",
+      "line": 452,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:453:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 453,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:454:0",
+      "text": "| '''YEAR'''",
+      "title": "Monica_Abbott",
+      "line": 454,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:455:0",
+      "text": "| '''NPF Team'''<ref>{{cite web |title=Historical Rosters |url=http://www.profastpitch.com/team/recognition/ |website=profastpitch.com |access-date=May 27, 2015 |url-status=usurped |archive-url=https://web.archive.org/web/20150609064421/http://www.profastpitch.com/team/recognition/ |archive-date=June 9, 2015  }}</ref>",
+      "title": "Monica_Abbott",
+      "line": 455,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:456:0",
+      "text": "| [[Win (baseball statistics)|W]]",
+      "title": "Monica_Abbott",
+      "line": 456,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:457:0",
+      "text": "| [[Loss (baseball statistics)|L]]",
+      "title": "Monica_Abbott",
+      "line": 457,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:458:0",
+      "text": "| [[Games pitched|GP]]",
+      "title": "Monica_Abbott",
+      "line": 458,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:459:0",
+      "text": "| [[Games started|GS]]",
+      "title": "Monica_Abbott",
+      "line": 459,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:460:0",
+      "text": "| [[Complete game|CG]]",
+      "title": "Monica_Abbott",
+      "line": 460,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:461:0",
+      "text": "| [[Shutout|Sh]]",
+      "title": "Monica_Abbott",
+      "line": 461,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:462:0",
+      "text": "| [[Save (sport)|SV]]",
+      "title": "Monica_Abbott",
+      "line": 462,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:463:0",
+      "text": "| [[Innings pitched|IP]]",
+      "title": "Monica_Abbott",
+      "line": 463,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:464:0",
+      "text": "| [[Hit (baseball)|H]]",
+      "title": "Monica_Abbott",
+      "line": 464,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:465:0",
+      "text": "| [[Softball#Scoring runs|R]]",
+      "title": "Monica_Abbott",
+      "line": 465,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:466:0",
+      "text": "| [[Earned run|ER]]",
+      "title": "Monica_Abbott",
+      "line": 466,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:467:0",
+      "text": "| [[Base on balls|BB]]",
+      "title": "Monica_Abbott",
+      "line": 467,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:468:0",
+      "text": "| [[Strikeout|SO]]",
+      "title": "Monica_Abbott",
+      "line": 468,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:469:0",
+      "text": "| [[Earned run average|ERA]]",
+      "title": "Monica_Abbott",
+      "line": 469,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:470:0",
+      "text": "| [[Walks plus hits per innings pitched|WHIP]]",
+      "title": "Monica_Abbott",
+      "line": 470,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:471:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 471,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:472:0",
+      "text": "| '''[[2007 National Pro Fastpitch season|2007]]'''",
+      "title": "Monica_Abbott",
+      "line": 472,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:473:0",
+      "text": "| [[Washington Glory]]",
+      "title": "Monica_Abbott",
+      "line": 473,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:474:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 474,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:475:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 475,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:476:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 476,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:477:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 477,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:478:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 478,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:479:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 479,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:480:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 480,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:481:0",
+      "text": "| 23.2",
+      "title": "Monica_Abbott",
+      "line": 481,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:482:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 482,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:483:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 483,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:484:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 484,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:485:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 485,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:486:0",
+      "text": "| 37",
+      "title": "Monica_Abbott",
+      "line": 486,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:487:0",
+      "text": "| 1.51",
+      "title": "Monica_Abbott",
+      "line": 487,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:488:0",
+      "text": "| 0.90",
+      "title": "Monica_Abbott",
+      "line": 488,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:489:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 489,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:490:0",
+      "text": "| '''[[2009 National Pro Fastpitch season|2009]]'''",
+      "title": "Monica_Abbott",
+      "line": 490,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:491:0",
+      "text": "| [[USSSA Pride]]",
+      "title": "Monica_Abbott",
+      "line": 491,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:492:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 492,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:493:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 493,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:494:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 494,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:495:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 495,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:496:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 496,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:497:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 497,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:498:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 498,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:499:0",
+      "text": "| 45.1",
+      "title": "Monica_Abbott",
+      "line": 499,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:500:0",
+      "text": "| 30",
+      "title": "Monica_Abbott",
+      "line": 500,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:501:0",
+      "text": "| 15",
+      "title": "Monica_Abbott",
+      "line": 501,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:502:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 502,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:503:0",
+      "text": "| 9",
+      "title": "Monica_Abbott",
+      "line": 503,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:504:0",
+      "text": "| 69",
+      "title": "Monica_Abbott",
+      "line": 504,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:505:0",
+      "text": "| 1.55",
+      "title": "Monica_Abbott",
+      "line": 505,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:506:0",
+      "text": "| 0.86",
+      "title": "Monica_Abbott",
+      "line": 506,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:507:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 507,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:508:0",
+      "text": "| '''[[2010 National Pro Fastpitch season|2010]]'''",
+      "title": "Monica_Abbott",
+      "line": 508,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:509:0",
+      "text": "| [[Tennessee Diamonds]]",
+      "title": "Monica_Abbott",
+      "line": 509,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:510:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 510,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:511:0",
+      "text": "| 11",
+      "title": "Monica_Abbott",
+      "line": 511,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:512:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 512,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:513:0",
+      "text": "| 17",
+      "title": "Monica_Abbott",
+      "line": 513,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:514:0",
+      "text": "| 17",
+      "title": "Monica_Abbott",
+      "line": 514,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:515:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 515,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:516:0",
+      "text": "| 0",
+      "title": "Monica_Abbott",
+      "line": 516,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:517:0",
+      "text": "| 127.1",
+      "title": "Monica_Abbott",
+      "line": 517,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:518:0",
+      "text": "| 89",
+      "title": "Monica_Abbott",
+      "line": 518,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:519:0",
+      "text": "| 30",
+      "title": "Monica_Abbott",
+      "line": 519,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:520:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 520,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:521:0",
+      "text": "| 13",
+      "title": "Monica_Abbott",
+      "line": 521,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:522:0",
+      "text": "| 161",
+      "title": "Monica_Abbott",
+      "line": 522,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:523:0",
+      "text": "| 1.04",
+      "title": "Monica_Abbott",
+      "line": 523,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:524:0",
+      "text": "| 0.80",
+      "title": "Monica_Abbott",
+      "line": 524,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:525:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 525,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:526:0",
+      "text": "| '''[[2011 National Pro Fastpitch season|2011]]'''",
+      "title": "Monica_Abbott",
+      "line": 526,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:527:0",
+      "text": "| [[Chicago Bandits]]",
+      "title": "Monica_Abbott",
+      "line": 527,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:528:0",
+      "text": "| 15",
+      "title": "Monica_Abbott",
+      "line": 528,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:529:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 529,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:530:0",
+      "text": "| 22",
+      "title": "Monica_Abbott",
+      "line": 530,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:531:0",
+      "text": "| 14",
+      "title": "Monica_Abbott",
+      "line": 531,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:532:0",
+      "text": "| 12",
+      "title": "Monica_Abbott",
+      "line": 532,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:533:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 533,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:534:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 534,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:535:0",
+      "text": "| 125.0",
+      "title": "Monica_Abbott",
+      "line": 535,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:536:0",
+      "text": "| 58",
+      "title": "Monica_Abbott",
+      "line": 536,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:537:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 537,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:538:0",
+      "text": "| 20",
+      "title": "Monica_Abbott",
+      "line": 538,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:539:0",
+      "text": "| 17",
+      "title": "Monica_Abbott",
+      "line": 539,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:540:0",
+      "text": "| 170",
+      "title": "Monica_Abbott",
+      "line": 540,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:541:0",
+      "text": "| 1.12",
+      "title": "Monica_Abbott",
+      "line": 541,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:542:0",
+      "text": "| 0.60",
+      "title": "Monica_Abbott",
+      "line": 542,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:543:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 543,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:544:0",
+      "text": "| '''[[2012 National Pro Fastpitch season|2012]]'''",
+      "title": "Monica_Abbott",
+      "line": 544,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:545:0",
+      "text": "| [[Chicago Bandits]]",
+      "title": "Monica_Abbott",
+      "line": 545,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:546:0",
+      "text": "| 16",
+      "title": "Monica_Abbott",
+      "line": 546,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:547:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 547,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:548:0",
+      "text": "| 26",
+      "title": "Monica_Abbott",
+      "line": 548,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:549:0",
+      "text": "| 17",
+      "title": "Monica_Abbott",
+      "line": 549,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:550:0",
+      "text": "| 15",
+      "title": "Monica_Abbott",
+      "line": 550,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:551:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 551,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:552:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 552,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:553:0",
+      "text": "| 140.0",
+      "title": "Monica_Abbott",
+      "line": 553,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:554:0",
+      "text": "| 72",
+      "title": "Monica_Abbott",
+      "line": 554,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:555:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 555,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:556:0",
+      "text": "| 21",
+      "title": "Monica_Abbott",
+      "line": 556,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:557:0",
+      "text": "| 37",
+      "title": "Monica_Abbott",
+      "line": 557,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:558:0",
+      "text": "| 209",
+      "title": "Monica_Abbott",
+      "line": 558,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:559:0",
+      "text": "| 1.05",
+      "title": "Monica_Abbott",
+      "line": 559,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:560:0",
+      "text": "| 0.78",
+      "title": "Monica_Abbott",
+      "line": 560,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:561:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 561,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:562:0",
+      "text": "| '''[[2013 National Pro Fastpitch season|2013]]'''",
+      "title": "Monica_Abbott",
+      "line": 562,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:563:0",
+      "text": "| [[Chicago Bandits]]",
+      "title": "Monica_Abbott",
+      "line": 563,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:564:0",
+      "text": "| 18",
+      "title": "Monica_Abbott",
+      "line": 564,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:565:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 565,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:566:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 566,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:567:0",
+      "text": "| 18",
+      "title": "Monica_Abbott",
+      "line": 567,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:568:0",
+      "text": "| 17",
+      "title": "Monica_Abbott",
+      "line": 568,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:569:0",
+      "text": "| 9",
+      "title": "Monica_Abbott",
+      "line": 569,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:570:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 570,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:571:0",
+      "text": "| 142.2",
+      "title": "Monica_Abbott",
+      "line": 571,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:572:0",
+      "text": "| 99",
+      "title": "Monica_Abbott",
+      "line": 572,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:573:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 573,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:574:0",
+      "text": "| 21",
+      "title": "Monica_Abbott",
+      "line": 574,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:575:0",
+      "text": "| 25",
+      "title": "Monica_Abbott",
+      "line": 575,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:576:0",
+      "text": "| 207",
+      "title": "Monica_Abbott",
+      "line": 576,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:577:0",
+      "text": "| 1.03",
+      "title": "Monica_Abbott",
+      "line": 577,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:578:0",
+      "text": "| 0.87",
+      "title": "Monica_Abbott",
+      "line": 578,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:579:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 579,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:580:0",
+      "text": "| '''[[2014 National Pro Fastpitch season|2014]]'''",
+      "title": "Monica_Abbott",
+      "line": 580,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:581:0",
+      "text": "| [[Chicago Bandits]]",
+      "title": "Monica_Abbott",
+      "line": 581,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:582:0",
+      "text": "| 10",
+      "title": "Monica_Abbott",
+      "line": 582,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:583:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 583,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:584:0",
+      "text": "| 20",
+      "title": "Monica_Abbott",
+      "line": 584,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:585:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 585,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:586:0",
+      "text": "| —",
+      "title": "Monica_Abbott",
+      "line": 586,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:587:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 587,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:588:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 588,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:589:0",
+      "text": "| 105.2",
+      "title": "Monica_Abbott",
+      "line": 589,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:590:0",
+      "text": "| 62",
+      "title": "Monica_Abbott",
+      "line": 590,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:591:0",
+      "text": "| 24",
+      "title": "Monica_Abbott",
+      "line": 591,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:592:0",
+      "text": "| 16",
+      "title": "Monica_Abbott",
+      "line": 592,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:593:0",
+      "text": "| 30",
+      "title": "Monica_Abbott",
+      "line": 593,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:594:0",
+      "text": "| 144",
+      "title": "Monica_Abbott",
+      "line": 594,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:595:0",
+      "text": "| 1.06",
+      "title": "Monica_Abbott",
+      "line": 595,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:596:0",
+      "text": "| 0.87",
+      "title": "Monica_Abbott",
+      "line": 596,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:597:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 597,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:598:0",
+      "text": "| '''[[2015 National Pro Fastpitch season|2015]]'''",
+      "title": "Monica_Abbott",
+      "line": 598,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:599:0",
+      "text": "| [[Chicago Bandits]]",
+      "title": "Monica_Abbott",
+      "line": 599,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:600:0",
+      "text": "| 16",
+      "title": "Monica_Abbott",
+      "line": 600,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:601:0",
+      "text": "| 1",
+      "title": "Monica_Abbott",
+      "line": 601,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:602:0",
+      "text": "| 20",
+      "title": "Monica_Abbott",
+      "line": 602,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:603:0",
+      "text": "| 15",
+      "title": "Monica_Abbott",
+      "line": 603,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:604:0",
+      "text": "| 15",
+      "title": "Monica_Abbott",
+      "line": 604,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:605:0",
+      "text": "| 13",
+      "title": "Monica_Abbott",
+      "line": 605,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:606:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 606,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:607:0",
+      "text": "| 112.1",
+      "title": "Monica_Abbott",
+      "line": 607,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:608:0",
+      "text": "| 39",
+      "title": "Monica_Abbott",
+      "line": 608,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:609:0",
+      "text": "| 6",
+      "title": "Monica_Abbott",
+      "line": 609,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:610:0",
+      "text": "| 5",
+      "title": "Monica_Abbott",
+      "line": 610,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:611:0",
+      "text": "| 26",
+      "title": "Monica_Abbott",
+      "line": 611,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:612:0",
+      "text": "| 175",
+      "title": "Monica_Abbott",
+      "line": 612,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:613:0",
+      "text": "| 0.31",
+      "title": "Monica_Abbott",
+      "line": 613,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:614:0",
+      "text": "| 0.58",
+      "title": "Monica_Abbott",
+      "line": 614,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:615:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 615,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:616:0",
+      "text": "| '''[[2016 National Pro Fastpitch season|2016]]'''",
+      "title": "Monica_Abbott",
+      "line": 616,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:617:0",
+      "text": "| [[Scrap Yard Dawgs]]",
+      "title": "Monica_Abbott",
+      "line": 617,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:618:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 618,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:619:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 619,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:620:0",
+      "text": "| 26",
+      "title": "Monica_Abbott",
+      "line": 620,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:621:0",
+      "text": "| 20",
+      "title": "Monica_Abbott",
+      "line": 621,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:622:0",
+      "text": "| 13",
+      "title": "Monica_Abbott",
+      "line": 622,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:623:0",
+      "text": "| 8",
+      "title": "Monica_Abbott",
+      "line": 623,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:624:0",
+      "text": "| 3",
+      "title": "Monica_Abbott",
+      "line": 624,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:625:0",
+      "text": "| 142.2",
+      "title": "Monica_Abbott",
+      "line": 625,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:626:0",
+      "text": "| 81",
+      "title": "Monica_Abbott",
+      "line": 626,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:627:0",
+      "text": "| 23",
+      "title": "Monica_Abbott",
+      "line": 627,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:628:0",
+      "text": "| 20",
+      "title": "Monica_Abbott",
+      "line": 628,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:629:0",
+      "text": "| 33",
+      "title": "Monica_Abbott",
+      "line": 629,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:630:0",
+      "text": "| 185",
+      "title": "Monica_Abbott",
+      "line": 630,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:631:0",
+      "text": "| 0.98",
+      "title": "Monica_Abbott",
+      "line": 631,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:632:0",
+      "text": "| 0.80",
+      "title": "Monica_Abbott",
+      "line": 632,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:633:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 633,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:634:0",
+      "text": "| '''[[2017 National Pro Fastpitch season|2017]]'''",
+      "title": "Monica_Abbott",
+      "line": 634,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:635:0",
+      "text": "| [[Scrap Yard Dawgs]]",
+      "title": "Monica_Abbott",
+      "line": 635,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:636:0",
+      "text": "| 21",
+      "title": "Monica_Abbott",
+      "line": 636,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:637:0",
+      "text": "| 4",
+      "title": "Monica_Abbott",
+      "line": 637,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:638:0",
+      "text": "| 26",
+      "title": "Monica_Abbott",
+      "line": 638,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:639:0",
+      "text": "| 19",
+      "title": "Monica_Abbott",
+      "line": 639,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:640:0",
+      "text": "| 16",
+      "title": "Monica_Abbott",
+      "line": 640,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:641:0",
+      "text": "| 7",
+      "title": "Monica_Abbott",
+      "line": 641,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:642:0",
+      "text": "| 2",
+      "title": "Monica_Abbott",
+      "line": 642,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:643:0",
+      "text": "| 144.0",
+      "title": "Monica_Abbott",
+      "line": 643,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:644:0",
+      "text": "| 68",
+      "title": "Monica_Abbott",
+      "line": 644,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:645:0",
+      "text": "| 27",
+      "title": "Monica_Abbott",
+      "line": 645,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:646:0",
+      "text": "| 24",
+      "title": "Monica_Abbott",
+      "line": 646,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:647:0",
+      "text": "| 36",
+      "title": "Monica_Abbott",
+      "line": 647,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:648:0",
+      "text": "| 269",
+      "title": "Monica_Abbott",
+      "line": 648,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:649:0",
+      "text": "| 1.16",
+      "title": "Monica_Abbott",
+      "line": 649,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:650:0",
+      "text": "| 0.72",
+      "title": "Monica_Abbott",
+      "line": 650,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:651:0",
+      "text": "|-",
+      "title": "Monica_Abbott",
+      "line": 651,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:652:0",
+      "text": "| colspan = 2 | '''TOTALS'''",
+      "title": "Monica_Abbott",
+      "line": 652,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:653:0",
+      "text": "| '''126'''",
+      "title": "Monica_Abbott",
+      "line": 653,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:654:0",
+      "text": "| '''41'''",
+      "title": "Monica_Abbott",
+      "line": 654,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:655:0",
+      "text": "| '''+184'''",
+      "title": "Monica_Abbott",
+      "line": 655,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:656:0",
+      "text": "| '''+129'''",
+      "title": "Monica_Abbott",
+      "line": 656,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:657:0",
+      "text": "| '''+112'''",
+      "title": "Monica_Abbott",
+      "line": 657,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:658:0",
+      "text": "| '''56'''",
+      "title": "Monica_Abbott",
+      "line": 658,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:659:0",
+      "text": "| '''18'''",
+      "title": "Monica_Abbott",
+      "line": 659,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:660:0",
+      "text": "| '''1108.2'''",
+      "title": "Monica_Abbott",
+      "line": 660,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:661:0",
+      "text": "| '''617'''",
+      "title": "Monica_Abbott",
+      "line": 661,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:662:0",
+      "text": "| '''210'''",
+      "title": "Monica_Abbott",
+      "line": 662,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:663:0",
+      "text": "| '''161'''",
+      "title": "Monica_Abbott",
+      "line": 663,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:664:0",
+      "text": "| '''228'''",
+      "title": "Monica_Abbott",
+      "line": 664,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:665:0",
+      "text": "| '''1626'''",
+      "title": "Monica_Abbott",
+      "line": 665,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:666:0",
+      "text": "| '''1.01'''",
+      "title": "Monica_Abbott",
+      "line": 666,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:667:0",
+      "text": "| '''0.76'''",
+      "title": "Monica_Abbott",
+      "line": 667,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:668:0",
+      "text": "|}",
+      "title": "Monica_Abbott",
+      "line": 668,
+      "chunk_idx": 0,
+      "parent_heading": "Career statistics"
+    },
+    {
+      "id": "Monica_Abbott:671:0",
+      "text": "{{Reflist}}",
+      "title": "Monica_Abbott",
+      "line": 671,
+      "chunk_idx": 0,
+      "parent_heading": "References"
+    },
+    {
+      "id": "Monica_Abbott:674:0",
+      "text": "* [https://www.usasoftball.com/roster/monica-abbott/ Monica Abbott] at [[USA Softball]]",
+      "title": "Monica_Abbott",
+      "line": 674,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:675:0",
+      "text": "* {{Team USA|new_id=monica-abbott-879698|old_id=AB/Monica-Abbott|archive=20220711224938}}",
+      "title": "Monica_Abbott",
+      "line": 675,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:676:0",
+      "text": "* {{Olympics.com profile}}",
+      "title": "Monica_Abbott",
+      "line": 676,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:677:0",
+      "text": "* {{Olympedia}}",
+      "title": "Monica_Abbott",
+      "line": 677,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:678:0",
+      "text": "* {{2019 Pan American Games profile|softball/athlete-profile-n1122424-abbott-monica}}",
+      "title": "Monica_Abbott",
+      "line": 678,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:679:0",
+      "text": "* {{webarchive |url=https://web.archive.org/web/20141230222440/http://www.usafastpitch.com/monica-abbot-2/ |title=Monica Abbott at USA Fastpitch |date=mdy}}",
+      "title": "Monica_Abbott",
+      "line": 679,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:680:0",
+      "text": "* {{Official website|https://www.monicaabbott.com/}}",
+      "title": "Monica_Abbott",
+      "line": 680,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:682:0",
+      "text": "{{Navboxes",
+      "title": "Monica_Abbott",
+      "line": 682,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:683:0",
+      "text": "| title = Monica Abbott—awards, championships and honors",
+      "title": "Monica_Abbott",
+      "line": 683,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:684:0",
+      "text": "| list  =",
+      "title": "Monica_Abbott",
+      "line": 684,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:685:0",
+      "text": "{{Southeastern Conference Athlete of the Year navbox}}",
+      "title": "Monica_Abbott",
+      "line": 685,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:686:0",
+      "text": "{{USA Softball Collegiate Player of the Year navbox}}",
+      "title": "Monica_Abbott",
+      "line": 686,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:687:0",
+      "text": "{{2015 Chicago Bandits}}",
+      "title": "Monica_Abbott",
+      "line": 687,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:688:0",
+      "text": "{{2017 Scrap Yard Dawgs}}",
+      "title": "Monica_Abbott",
+      "line": 688,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:689:0",
+      "text": "{{Honda Sports Award}}",
+      "title": "Monica_Abbott",
+      "line": 689,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:690:0",
+      "text": "{{United States softball roster 2008 Summer Olympics}}",
+      "title": "Monica_Abbott",
+      "line": 690,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:691:0",
+      "text": "{{United States softball roster 2020 Summer Olympics}}",
+      "title": "Monica_Abbott",
+      "line": 691,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:692:0",
+      "text": "}}",
+      "title": "Monica_Abbott",
+      "line": 692,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:694:0",
+      "text": "{{DEFAULTSORT:Abbott, Monica}}",
+      "title": "Monica_Abbott",
+      "line": 694,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:695:0",
+      "text": "[[Category:1985 births]]",
+      "title": "Monica_Abbott",
+      "line": 695,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:696:0",
+      "text": "[[Category:Living people]]",
+      "title": "Monica_Abbott",
+      "line": 696,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:697:0",
+      "text": "[[Category:American softball players]]",
+      "title": "Monica_Abbott",
+      "line": 697,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:698:0",
+      "text": "[[Category:Chicago Bandits players]]",
+      "title": "Monica_Abbott",
+      "line": 698,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:699:0",
+      "text": "[[Category:World Games gold medalists for the United States]]",
+      "title": "Monica_Abbott",
+      "line": 699,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:700:0",
+      "text": "[[Category:World Games medalists in softball]]",
+      "title": "Monica_Abbott",
+      "line": 700,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:701:0",
+      "text": "[[Category:Softball players at the 2007 Pan American Games]]",
+      "title": "Monica_Abbott",
+      "line": 701,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:702:0",
+      "text": "[[Category:Softball players at the 2019 Pan American Games]]",
+      "title": "Monica_Abbott",
+      "line": 702,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:703:0",
+      "text": "[[Category:Medalists at the 2007 Pan American Games]]",
+      "title": "Monica_Abbott",
+      "line": 703,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:704:0",
+      "text": "[[Category:Medalists at the 2019 Pan American Games]]",
+      "title": "Monica_Abbott",
+      "line": 704,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:705:0",
+      "text": "[[Category:Pan American Games gold medalists for the United States in softball]]",
+      "title": "Monica_Abbott",
+      "line": 705,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:706:0",
+      "text": "[[Category:Medalists at the 2020 Summer Olympics]]",
+      "title": "Monica_Abbott",
+      "line": 706,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:707:0",
+      "text": "[[Category:Medalists at the 2008 Summer Olympics]]",
+      "title": "Monica_Abbott",
+      "line": 707,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:708:0",
+      "text": "[[Category:Olympic silver medalists for the United States in softball]]",
+      "title": "Monica_Abbott",
+      "line": 708,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:709:0",
+      "text": "[[Category:Olympic softball players for the United States]]",
+      "title": "Monica_Abbott",
+      "line": 709,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:710:0",
+      "text": "[[Category:Scrap Yard Dawgs players]]",
+      "title": "Monica_Abbott",
+      "line": 710,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:711:0",
+      "text": "[[Category:Softball players at the 2008 Summer Olympics]]",
+      "title": "Monica_Abbott",
+      "line": 711,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:712:0",
+      "text": "[[Category:Softball players at the 2020 Summer Olympics]]",
+      "title": "Monica_Abbott",
+      "line": 712,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:713:0",
+      "text": "[[Category:Softball players from California]]",
+      "title": "Monica_Abbott",
+      "line": 713,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:714:0",
+      "text": "[[Category:Sportspeople from Salinas, California]]",
+      "title": "Monica_Abbott",
+      "line": 714,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:715:0",
+      "text": "[[Category:Sportspeople from Santa Cruz, California]]",
+      "title": "Monica_Abbott",
+      "line": 715,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:716:0",
+      "text": "[[Category:Tennessee Volunteers softball players]]",
+      "title": "Monica_Abbott",
+      "line": 716,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:717:0",
+      "text": "[[Category:Japan Diamond Softball League players]]",
+      "title": "Monica_Abbott",
+      "line": 717,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:718:0",
+      "text": "[[Category:American expatriate sportspeople in Japan]]",
+      "title": "Monica_Abbott",
+      "line": 718,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:719:0",
+      "text": "[[Category:North Salinas High School alumni]]",
+      "title": "Monica_Abbott",
+      "line": 719,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:720:0",
+      "text": "[[Category:Medalists at the 2022 World Games]]",
+      "title": "Monica_Abbott",
+      "line": 720,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    },
+    {
+      "id": "Monica_Abbott:721:0",
+      "text": "[[Category:Southeastern Conference Athlete of the Year winners]]",
+      "title": "Monica_Abbott",
+      "line": 721,
+      "chunk_idx": 0,
+      "parent_heading": "External links"
+    }
+  ]
+}
