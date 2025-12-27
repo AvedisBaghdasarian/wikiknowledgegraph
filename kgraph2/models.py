@@ -27,6 +27,7 @@ class Chunk:
     content: str
     index: int
     type: NodeType
+    hierarchy_owner: str
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 @dataclass

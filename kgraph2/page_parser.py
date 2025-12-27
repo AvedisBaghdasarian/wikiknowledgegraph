@@ -25,6 +25,11 @@ class PageParserInner:
 
         current_block: List[str] = []
         chunk_index = 0
+        
+        # Track heading hierarchy: list of heading titles.
+        # The owner is the last element in this list.
+        # By default, the hierarchy starts with the page title (representing level 1).
+        hierarchy_stack = [self.page.title]
 
         for node in wikicode.nodes:
             # MediaWiki heading
@@ -34,18 +39,33 @@ class PageParserInner:
                     yield Chunk(
                         content="".join(current_block).strip(),
                         index=chunk_index,
-                        type=NodeType.PARAGRAPH
+                        type=NodeType.PARAGRAPH,
+                        hierarchy_owner=hierarchy_stack[-1]
                     )
                     chunk_index += 1
                     current_block = []
 
-                # Emit heading chunk (preserve original markup)
+                # Determine heading level and title
+                # MediaWiki headings usually start at level 2 (== Heading ==).
+                # We want to maintain a stack where the level corresponds to the stack length.
+                heading_level = node.level
+                heading_title = node.title.strip()
+
+                # Update hierarchy stack: pop until its length < current heading level
+                while len(hierarchy_stack) >= heading_level:
+                    hierarchy_stack.pop()
+                
+                # The hierarchy owner for the HEADING chunk itself is its parent (the current last element)
                 yield Chunk(
                     content=str(node).strip(),
                     index=chunk_index,
-                    type=NodeType.HEADING
+                    type=NodeType.HEADING,
+                    hierarchy_owner=hierarchy_stack[-1]
                 )
                 chunk_index += 1
+
+                # Append this new heading to the stack to become the new owner for subsequent content
+                hierarchy_stack.append(heading_title)
 
             else:
                 # Accumulate text-like nodes
@@ -58,7 +78,8 @@ class PageParserInner:
             yield Chunk(
                 content="".join(current_block).strip(),
                 index=chunk_index,
-                type=NodeType.PARAGRAPH
+                type=NodeType.PARAGRAPH,
+                hierarchy_owner=hierarchy_stack[-1]
             )
 
 class PageParser:
@@ -97,6 +118,7 @@ class PageParser:
                     content=block.content,
                     index=chunk_index,
                     type=NodeType.HEADING,
+                    hierarchy_owner=block.hierarchy_owner,
                     metadata=block.metadata
                 )
                 chunk_index += 1
@@ -108,6 +130,7 @@ class PageParser:
                         content=sub_content,
                         index=chunk_index,
                         type=NodeType.PARAGRAPH,
+                        hierarchy_owner=block.hierarchy_owner,
                         metadata=block.metadata
                     )
                     chunk_index += 1
