@@ -63,11 +63,15 @@ class KGraphClient:
             # Optimization: Using a single MERGE with SET is standard, but we ensure
             # that we're matching on the indexed UID. 
             # Given "mostly new" nodes, we still use MERGE for safety.
+            # Optimization: Smart MERGE - avoid n += row on match if unnecessary
+            # Using row properties directly in ON MATCH to be explicit.
+            props_to_set = ", ".join([f"n.{k} = row.{k}" for k in batch[0].keys() if k != "uid"])
+            
             cypher = f"""
             UNWIND $batch AS row
             MERGE (n:Resource {{uid: row.uid}})
             ON CREATE SET n:{label}, n += row
-            ON MATCH SET n += row
+            ON MATCH SET {props_to_set}
             """
             self._run_batch(cypher, batch, label=f"Nodes:{label}")
         
@@ -87,11 +91,13 @@ class KGraphClient:
         # This significantly reduces the overhead of re-creating/checking existing nodes.
         batch_data = [{"source": l.source_uid, "target": l.target_uid} for l in self._link_buffer]
 
+        # Optimization: Match-Match-Merge pattern. 
+        # Don't MERGE target nodes during link creation. 
+        # This assumes nodes are already created or will be created in their own flush.
         cypher = """
         UNWIND $batch AS row
         MATCH (a:Resource {uid: row.source})
-        MERGE (b:Resource {uid: row.target})
-        ON CREATE SET b:Title
+        MATCH (b:Resource {uid: row.target})
         MERGE (a)-[:LINK]->(b)
         """
         self._run_batch(cypher, batch_data, label="Links")
@@ -101,32 +107,34 @@ class KGraphClient:
         with tracer.start_as_current_span("neo4j_run_batch") as span:
             span.set_attribute("neo4j.batch_label", label)
             span.set_attribute("neo4j.batch_size", len(batch))
-            for i in range(0, len(batch), self.batch_size):
-                sub_batch = batch[i:i+self.batch_size]
-                
-                # Calculate size via JSON serialization
-                batch_json = json.dumps(sub_batch)
-                batch_size_bytes = len(batch_json.encode('utf-8'))
-                
-                start = time.perf_counter()
-                with tracer.start_as_current_span("neo4j_session_execute") as sub_span:
-                    sub_span.set_attribute("neo4j.sub_batch_size", len(sub_batch))
-                    sub_span.set_attribute("neo4j.batch_size_bytes", batch_size_bytes)
-                    with self._driver.session() as session:
+            
+            # Optimization: Open a single session for all sub-batches
+            with self._driver.session() as session:
+                for i in range(0, len(batch), self.batch_size):
+                    sub_batch = batch[i:i+self.batch_size]
+                    
+                    # Calculate size via JSON serialization
+                    batch_json = json.dumps(sub_batch)
+                    batch_size_bytes = len(batch_json.encode('utf-8'))
+                    
+                    start = time.perf_counter()
+                    with tracer.start_as_current_span("neo4j_session_execute") as sub_span:
+                        sub_span.set_attribute("neo4j.sub_batch_size", len(sub_batch))
+                        sub_span.set_attribute("neo4j.batch_size_bytes", batch_size_bytes)
                         try:
                             session.execute_write(lambda tx: tx.run(cypher, batch=sub_batch))
                         except Exception as e:
                             logging.error(f"Failed to execute batch for {label}. Cypher: {cypher}")
                             logging.error(f"Batch sample (first 2): {sub_batch[:2]}")
                             raise e
-                
-                duration = time.perf_counter() - start
-                latency_ms = duration * 1000
-                throughput_mb_s = (batch_size_bytes / (1024 * 1024)) / duration if duration > 0 else 0
-                
-                logging.info(
-                    f"Wrote {label} batch {i}-{i+len(sub_batch)} | "
-                    f"Size: {batch_size_bytes/1024:.2f} KB | "
-                    f"Latency: {latency_ms:.1f} ms | "
-                    f"Throughput: {throughput_mb_s:.2f} MB/s"
-                )
+                    
+                    duration = time.perf_counter() - start
+                    latency_ms = duration * 1000
+                    throughput_mb_s = (batch_size_bytes / (1024 * 1024)) / duration if duration > 0 else 0
+                    
+                    logging.info(
+                        f"Wrote {label} batch {i}-{i+len(sub_batch)} | "
+                        f"Size: {batch_size_bytes/1024:.2f} KB | "
+                        f"Latency: {latency_ms:.1f} ms | "
+                        f"Throughput: {throughput_mb_s:.2f} MB/s"
+                    )
