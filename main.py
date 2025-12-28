@@ -89,10 +89,12 @@ def main():
                 # Link from this chunk to the mentioned Page title
                 links_to_write.append(Link(source_uid=chunk_uid, target_uid=target_title))
                 
-        # Write to Neo4j
+        # Write to Neo4j (buffered)
         kg_client.write_nodes(nodes_to_write)
         kg_client.write_links(links_to_write)
 
+    # Final flush to write any remaining buffered items
+    kg_client.flush()
     kg_client.close()
     logging.info("Finished processing.")
 
