@@ -1,9 +1,9 @@
 import logging
 import hashlib
-from kgraph2.models import XMLMultiPageDoc, NodeType, Node, Link, Page
+from kgraph2.models import XMLMultiPageDoc, NodeType, Node, Link
 from kgraph2.page_parser import PageParser
 from kgraph2.client import KGraphClient
-from kgraph.embeddings import EmbeddingClient
+from kgraph2.embeddings import EmbeddingClient
 
 # Setup basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -31,11 +31,14 @@ def main():
         logging.error(f"File not found: {xml_path}")
         return
 
+    # Global batching across pages
+    BATCH_SIZE = 32
+    embed_buffer = []          # Stores chunk contents for embedding
+    nodes_to_write = []        # Stores Node objects globally
+    links_to_write = []        # Stores Link objects globally
+
     for page in doc:
         logging.info(f"Processing page: {page.title}")
-        
-        nodes_to_write = []
-        links_to_write = []
         
         # 1. Create Title node
         title_uid = page.title # Title can be its own UID if we assume uniqueness across pages
@@ -51,17 +54,17 @@ def main():
         for chunk in parser:
             chunk_uid = get_uid(f"{page.title}:{chunk.index}:{chunk.content[:50]}")
             
-            # Generate embedding
-            embedding = embed_client.get_embedding(chunk.content)
+            # Add chunk content to buffer for batch embedding
+            embed_buffer.append(chunk.content)
             
-            # Create Node
+            # Create Node without embedding yet
             chunk_node = Node(
                 uid=chunk_uid,
                 type=chunk.type,
                 properties={
                     "content": chunk.content,
                     "index": chunk.index,
-                    "embedding": embedding
+                    "embedding": None  # Will fill after batch embedding
                 }
             )
             nodes_to_write.append(chunk_node)
@@ -74,13 +77,7 @@ def main():
             # we need to be careful with UID matching for headings if we want to link to them.
             # For simplicity, if hierarchy_owner is page.title, we link to title_uid.
             # If it's something else, it's a heading.
-            
             owner_uid = chunk.hierarchy_owner if chunk.hierarchy_owner == page.title else chunk.hierarchy_owner
-            # NOTE: PageParserInner uses hierarchy_stack which contains titles.
-            # To link to the correct Heading node, we'd need to track Heading UIDs by their titles.
-            # For this 'intentionally simple' version, we'll link to owner_uid and assume 
-            # we can find it in Neo4j.
-            
             links_to_write.append(Link(source_uid=owner_uid, target_uid=chunk_uid))
             
             # Extract links via get_links()
@@ -89,9 +86,23 @@ def main():
                 # Link from this chunk to the mentioned Page title
                 links_to_write.append(Link(source_uid=chunk_uid, target_uid=target_title))
                 
-        # Write to Neo4j (buffered)
-        kg_client.write_nodes(nodes_to_write)
-        kg_client.write_links(links_to_write)
+            # Batch embeddings once buffer is full
+            if len(embed_buffer) >= BATCH_SIZE:
+                embeddings = embed_client.get_embeddings(embed_buffer)
+                for node, vec in zip(nodes_to_write[-BATCH_SIZE:], embeddings):
+                    node.properties["embedding"] = vec
+                embed_buffer.clear()
+
+    # Final flush for remaining embeddings
+    if embed_buffer:
+        embeddings = embed_client.get_embeddings(embed_buffer)
+        for node, vec in zip(nodes_to_write[-len(embed_buffer):], embeddings):
+            node.properties["embedding"] = vec
+        embed_buffer.clear()
+
+    # Write all nodes and links to Neo4j at once
+    kg_client.write_nodes(nodes_to_write)
+    kg_client.write_links(links_to_write)
 
     # Final flush to write any remaining buffered items
     kg_client.flush()

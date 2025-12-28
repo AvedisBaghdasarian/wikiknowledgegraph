@@ -3,7 +3,7 @@ import logging
 import time
 from typing import List, Union, Dict, Any
 from .models import Node, Link, NodeType
-from kgraph.config import DEFAULT_CONFIG
+from .config import DEFAULT_CONFIG
 
 class KGraphClient:
     def __init__(self, uri: str = DEFAULT_CONFIG.neo4j_uri, 
