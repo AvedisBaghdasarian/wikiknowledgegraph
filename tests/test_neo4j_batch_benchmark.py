@@ -41,6 +41,7 @@ def test_neo4j_500_batch_write():
             saved = json.load(fh)
         batch = saved.get('batch')
         cypher = saved.get('cypher') or "UNWIND $batch AS row RETURN count(1) AS created"
+        
         N_actual = len(batch) if batch is not None else 0
         print(f"Using saved batch file: {saved_path} (operations={N_actual})")
         start = time.perf_counter()
@@ -49,7 +50,8 @@ def test_neo4j_500_batch_write():
             session.run(cypher, batch=batch)
         elapsed = time.perf_counter() - start
 
-        print(f"Neo4j saved-batch write elapsed={elapsed:.4f}s")
+        rate = N_actual / elapsed if elapsed > 0 else 0
+        print(f"Neo4j saved-batch write: elapsed={elapsed:.4f}s rate={rate:.2f} ops/sec")
 
         # Try a safe cleanup for common node id fields
         ids = [r.get('id') for r in batch if isinstance(r, dict) and 'id' in r]
@@ -72,22 +74,29 @@ def test_neo4j_500_batch_write():
         # Basic sanity: ensure we had some operations
         assert N_actual > 0
     else:
-        # fallback: original simple benchmark
-        rows = [{"id": i, "run_id": run_id, "value": f"val_{i}"} for i in range(500)]
+        # fallback: optimized simple benchmark for 20k target
+        N_TOTAL = 20000
+        rows = [{"id": i, "run_id": run_id, "value": f"val_{i}"} for i in range(N_TOTAL)]
+        
+        # Use a more realistic query that includes label and property SET
         cypher = (
             "UNWIND $rows AS r\n"
-            "CREATE (n:BenchBenchmark)\n"
-            "SET n.id = r.id, n.run_id = r.run_id, n.value = r.value\n"
+            "MERGE (n:BenchBenchmark {uid: r.id, run_id: r.run_id})\n"
+            "ON CREATE SET n.value = r.value\n"
             "RETURN count(n) AS created"
         )
 
         start = time.perf_counter()
         with driver.session() as session:
+            # Ensure index exists for benchmark
+            session.run("CREATE CONSTRAINT benchmark_uid IF NOT EXISTS FOR (n:BenchBenchmark) REQUIRE n.uid IS UNIQUE")
+            
             result = session.run(cypher, rows=rows)
             created = result.single()["created"]
         elapsed = time.perf_counter() - start
-
-        print(f"Neo4j batch write: created={created} elapsed={elapsed:.4f}s")
+        
+        rate = created / elapsed if elapsed > 0 else 0
+        print(f"Neo4j bulk write: created={created} elapsed={elapsed:.4f}s rate={rate:.2f} nodes/sec")
 
         # Cleanup created nodes for this run
         with driver.session() as session:

@@ -41,7 +41,7 @@ def main():
         return
 
     # Global batching for embeddings
-    EMBED_BATCH_SIZE = 32
+    EMBED_BATCH_SIZE = 1024
     embed_buffer = []          # Stores (node_object, content_string) tuples
 
     for page in doc:

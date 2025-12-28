@@ -1,6 +1,7 @@
 from neo4j import GraphDatabase
 import logging
 import time
+import json
 from typing import List, Union, Dict, Any
 from .models import Node, Link, NodeType
 from .config import DEFAULT_CONFIG
@@ -59,12 +60,14 @@ class KGraphClient:
         for node_type, batch in by_type.items():
             if not batch: continue
             label = node_type.value
-            # We MERGE on the generic 'Resource' label to avoid label-mismatch conflicts.
-            # Then we SET the specific label and properties.
+            # Optimization: Using a single MERGE with SET is standard, but we ensure
+            # that we're matching on the indexed UID. 
+            # Given "mostly new" nodes, we still use MERGE for safety.
             cypher = f"""
             UNWIND $batch AS row
             MERGE (n:Resource {{uid: row.uid}})
-            SET n:{label}, n += row
+            ON CREATE SET n:{label}, n += row
+            ON MATCH SET n += row
             """
             self._run_batch(cypher, batch, label=f"Nodes:{label}")
         
@@ -80,16 +83,13 @@ class KGraphClient:
     def flush_links(self):
         if not self._link_buffer: return
         
-        # Every link is (a)-[:LINK]->(b)
-        # Using a MERGE on the generic 'Resource' label for both source and target.
-        # This ensures the link is created even if nodes are flushed out of order or as stubs.
-        # Default stubs get the 'Title' label.
-        
+        # Optimization: Use MATCH where possible, and only MERGE for stubs.
+        # This significantly reduces the overhead of re-creating/checking existing nodes.
         batch_data = [{"source": l.source_uid, "target": l.target_uid} for l in self._link_buffer]
-        
+
         cypher = """
         UNWIND $batch AS row
-        MERGE (a:Resource {uid: row.source})
+        MATCH (a:Resource {uid: row.source})
         MERGE (b:Resource {uid: row.target})
         ON CREATE SET b:Title
         MERGE (a)-[:LINK]->(b)
@@ -103,9 +103,15 @@ class KGraphClient:
             span.set_attribute("neo4j.batch_size", len(batch))
             for i in range(0, len(batch), self.batch_size):
                 sub_batch = batch[i:i+self.batch_size]
+                
+                # Calculate size via JSON serialization
+                batch_json = json.dumps(sub_batch)
+                batch_size_bytes = len(batch_json.encode('utf-8'))
+                
                 start = time.perf_counter()
                 with tracer.start_as_current_span("neo4j_session_execute") as sub_span:
                     sub_span.set_attribute("neo4j.sub_batch_size", len(sub_batch))
+                    sub_span.set_attribute("neo4j.batch_size_bytes", batch_size_bytes)
                     with self._driver.session() as session:
                         try:
                             session.execute_write(lambda tx: tx.run(cypher, batch=sub_batch))
@@ -113,4 +119,14 @@ class KGraphClient:
                             logging.error(f"Failed to execute batch for {label}. Cypher: {cypher}")
                             logging.error(f"Batch sample (first 2): {sub_batch[:2]}")
                             raise e
-                logging.info(f"Wrote {label} batch {i}-{i+len(sub_batch)} in {(time.perf_counter()-start)*1000:.1f} ms")
+                
+                duration = time.perf_counter() - start
+                latency_ms = duration * 1000
+                throughput_mb_s = (batch_size_bytes / (1024 * 1024)) / duration if duration > 0 else 0
+                
+                logging.info(
+                    f"Wrote {label} batch {i}-{i+len(sub_batch)} | "
+                    f"Size: {batch_size_bytes/1024:.2f} KB | "
+                    f"Latency: {latency_ms:.1f} ms | "
+                    f"Throughput: {throughput_mb_s:.2f} MB/s"
+                )
