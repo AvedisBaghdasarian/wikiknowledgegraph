@@ -2,6 +2,9 @@ import mwparserfromhell
 from typing import Iterator, List
 from .models import Page, Chunk, NodeType
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from .tracing import get_tracer
+
+tracer = get_tracer(__name__)
 
 class PageParserInner:
     def __init__(self, page: Page):
@@ -14,6 +17,7 @@ class PageParserInner:
         """
         self.page = page
 
+    @tracer.start_as_current_span("PageParserInner.__iter__")
     def __iter__(self) -> Iterator[Chunk]:
         """
         Iterator that yields coarse blocks (Chunks) from the page content.
@@ -100,6 +104,7 @@ class PageParser:
             is_separator_regex=False,
         )
 
+    @tracer.start_as_current_span("PageParser.__iter__")
     def __iter__(self) -> Iterator[Chunk]:
         """
         Iterator that yields smaller chunks from the page content.
